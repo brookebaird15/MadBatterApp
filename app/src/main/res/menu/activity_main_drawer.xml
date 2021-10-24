@@ -4,5 +4,8 @@
     tools:showIn="navigation_view">
 <group>
 
+    <item
+        android:id="@+id/homenav"
+        android:title="@string/menu_home" />
 </group>
 </menu>
