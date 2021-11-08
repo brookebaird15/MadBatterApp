@@ -17,6 +17,7 @@
     <string name="menu_credits">Credits</string>
     <string name="menu_cookies">Cookies</string>
     <string name="menu_brownies">Brownies</string>
+    <string name="menu_cake">Cakes</string>
 
     <!-- HOME FRAGMENT STRINGS -->
     <string name="Categories">Categories</string>
