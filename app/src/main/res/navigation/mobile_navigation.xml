@@ -14,4 +14,9 @@
         android:name="com.example.madbatterapp.Fragments.RecipeFragment"
         android:label="Recipe"
         tools:layout="@layout/fragment_recipe" />
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="com.example.madbatterapp.Fragments.CreditsFragment"
+        android:label="Credits"
+        tools:layout="@layout/fragment_credits" />
 </navigation>
