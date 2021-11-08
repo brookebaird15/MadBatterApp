@@ -20,6 +20,9 @@
         android:id="@+id/nav_recipe"
         android:title="@string/menu_recipe"/>
     <item
+        android:id="@+id/nav_about"
+        android:title="@string/menu_aboutus"/>
+    <item
         android:id="@+id/nav_credits"
         android:title="@string/menu_credits"/>
 </group>
