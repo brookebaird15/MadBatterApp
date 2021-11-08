@@ -1,66 +1,20 @@
 package com.example.madbatterapp.HomeViewAdapter;
 
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.madbatterapp.POJOS.CategoryItem;
 import com.example.madbatterapp.R;
 
-import java.util.ArrayList;
 
-public class CustomCategoryViewAdapter extends RecyclerView.Adapter<CustomCategoryHolder>{
-    private ArrayList<CategoryItem> categoryItems;
-    public CustomCategoryViewAdapter(ArrayList<CategoryItem> categoryItems){this.categoryItems = categoryItems;}
-
-    /**
-     * Creates the view
-     * @param parent
-     * @param viewType
-     * @return
-     */
-    @NonNull
-    @Override
-    public CustomCategoryHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_category_card, parent, false);
-        return new CustomCategoryHolder(view);
-    }
-
-    /**
-     * Binds the view
-     * @param holder
-     * @param position
-     */
-    @Override
-    public void onBindViewHolder(@NonNull CustomCategoryHolder holder, int position) {
-        CategoryItem categoryItem = categoryItems.get(position);
-        holder.image.setImageResource(categoryItem.getImage());
-    }
-
-    @Override
-    public int getItemCount() {
-        if (categoryItems != null){
-            return categoryItems.size();
-        }
-        return 0;
-    }
-}
-
-/**
- * class CustomCategoryHolder
- * Holds the view and the contents within it
- * @Imageview image
- */
-public class CustomCategoryHolder extends RecyclerView.ViewHolder {
+class CustomCategoryHolder extends RecyclerView.ViewHolder{
     protected ImageView image;
 
-    public CustomCategoryHolder(@NonNull View itemView){
+    public CustomCategoryHolder(@NonNull View itemView) {
         super(itemView);
         this.image = itemView.findViewById(R.id.categoryBtn);
-
     }
 }
+
