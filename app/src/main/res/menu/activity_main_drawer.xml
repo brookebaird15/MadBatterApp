@@ -13,6 +13,10 @@
         android:title="@string/menu_cookies"/>
 
     <item
+        android:id="@+id/nav_brownies"
+        android:title="@string/menu_cookies"/>
+
+    <item
         android:id="@+id/nav_recipe"
         android:title="@string/menu_recipe"/>
 
