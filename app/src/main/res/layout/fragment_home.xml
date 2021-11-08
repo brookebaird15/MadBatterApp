@@ -35,6 +35,25 @@
                     android:src="@drawable/welcome" />
             </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/homeCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="@string/Categories"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+                <!-- TODO
+                ADD CUSTOM FONTS FOR TEXTS -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
 
