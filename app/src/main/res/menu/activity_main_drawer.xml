@@ -8,11 +8,11 @@
         android:id="@+id/nav_home"
         android:title="@string/menu_home" />
     <item
-        android:id="@+id/nav_brownies"
-        android:title="@string/menu_cookies"/>
-    <item
         android:id="@+id/nav_cake"
         android:title="@string/menu_cake"/>
+    <item
+        android:id="@+id/nav_brownies"
+        android:title="@string/menu_cookies"/>
     <item
         android:id="@+id/nav_cookies"
         android:title="@string/menu_cookies"/>
