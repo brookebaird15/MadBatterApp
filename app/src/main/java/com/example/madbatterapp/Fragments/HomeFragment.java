@@ -3,12 +3,18 @@ package com.example.madbatterapp.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.madbatterapp.HomeViewAdapter.CustomCategoryViewAdapter;
+import com.example.madbatterapp.HomeViewAdapter.POJOS.CategoryItem;
 import com.example.madbatterapp.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,6 +67,18 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        ArrayList<CategoryItem> categoryItems = new ArrayList<>();
+        categoryItems.add(new CategoryItem(R.drawable.cakebtnimg));
+        categoryItems.add(new CategoryItem(R.drawable.cakebtnimg));
+        categoryItems.add(new CategoryItem(R.drawable.cakebtnimg));
+        categoryItems.add(new CategoryItem(R.drawable.cakebtnimg));
+        categoryItems.add(new CategoryItem(R.drawable.cakebtnimg));
+
+
+        RecyclerView recyclerView = view.findViewById(R.id.categoriesRecyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
+        recyclerView.setAdapter(new CustomCategoryViewAdapter(categoryItems));
+        return view;
     }
 }
