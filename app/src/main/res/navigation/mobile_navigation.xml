@@ -19,4 +19,9 @@
         android:name="com.example.madbatterapp.Fragments.CreditsFragment"
         android:label="Credits"
         tools:layout="@layout/fragment_credits" />
+    <fragment
+        android:id="@+id/nav_cookies"
+        android:name="com.example.madbatterapp.Fragments.CookieFragment"
+        android:label="Cookies"
+        tools:layout="@layout/fragment_cookie" />
 </navigation>
