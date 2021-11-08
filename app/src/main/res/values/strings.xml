@@ -10,6 +10,10 @@
 
     <!-- CONTENT DESCRIPTIONS FOR IMAGES -->
     <string name="Welcome">Welcome</string>
+
     <!-- MENU STRINGS-->
     <string name="menu_home">Home</string>
+
+    <!-- HOME FRAGMENT STRINGS -->
+    <string name="Categories">Categories</string>
 </resources>
