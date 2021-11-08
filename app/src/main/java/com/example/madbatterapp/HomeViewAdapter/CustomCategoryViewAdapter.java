@@ -3,22 +3,21 @@ package com.example.madbatterapp.HomeViewAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.madbatterapp.POJOS.CategoryItem;
+import com.example.madbatterapp.HomeViewAdapter.POJOS.CategoryItem;
 import com.example.madbatterapp.R;
 
 import java.util.ArrayList;
 
-public class CustomCategoryViewAdapter extends RecyclerView.Adapter<CustomCategoryHolder> {
+public class CustomCategoryViewAdapter extends RecyclerView.Adapter<CustomCategoryHolder>{
 
     private ArrayList<CategoryItem> categoryItems;
-
-    public CustomCategoryViewAdapter(ArrayList<CategoryItem> categoryItems) {
-        this.categoryItems = categoryItems;
-    }
+    public CustomCategoryViewAdapter(ArrayList<CategoryItem> categoryItems) {this.categoryItems = categoryItems;}
 
     @NonNull
     @Override
@@ -43,3 +42,12 @@ public class CustomCategoryViewAdapter extends RecyclerView.Adapter<CustomCatego
         return 0;
     }
 }
+class CustomCategoryHolder extends RecyclerView.ViewHolder{
+    protected ImageView image;
+
+    public CustomCategoryHolder(@NonNull View itemView) {
+        super(itemView);
+        this.image = itemView.findViewById(R.id.categoryBtn);
+    }
+}
+
