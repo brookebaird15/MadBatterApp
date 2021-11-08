@@ -7,6 +7,7 @@ import android.view.Menu;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -19,7 +20,7 @@ import com.example.madbatterapp.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-    private ActivityMainBinding binding;
+    private @NonNull ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
