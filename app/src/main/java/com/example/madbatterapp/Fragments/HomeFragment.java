@@ -70,10 +70,11 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         ArrayList<CategoryItem> categoryItems = new ArrayList<>();
         categoryItems.add(new CategoryItem(R.drawable.cakebtnimg));
-        categoryItems.add(new CategoryItem(R.drawable.cakebtnimg));
-        categoryItems.add(new CategoryItem(R.drawable.cakebtnimg));
-        categoryItems.add(new CategoryItem(R.drawable.cakebtnimg));
-        categoryItems.add(new CategoryItem(R.drawable.cakebtnimg));
+        categoryItems.add(new CategoryItem(R.drawable.browniebtnimg));
+        categoryItems.add(new CategoryItem(R.drawable.cookiesbtnimg));
+        categoryItems.add(new CategoryItem(R.drawable.recipebtnimg));
+        categoryItems.add(new CategoryItem(R.drawable.aboutbtnimg));
+        categoryItems.add(new CategoryItem(R.drawable.creditsbtnimg));
 
 
         RecyclerView recyclerView = view.findViewById(R.id.categoriesRecyclerView);
