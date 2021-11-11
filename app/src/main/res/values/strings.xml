@@ -13,11 +13,13 @@
 
     <!-- MENU STRINGS-->
     <string name="menu_home">Home</string>
-    <string name="menu_recipe">Recipe</string>
+    <string name="menu_recipe">Recipe of the Week</string>
     <string name="menu_credits">Credits</string>
     <string name="menu_cookies">Cookies</string>
     <string name="menu_brownies">Brownies</string>
     <string name="menu_cake">Cakes</string>
+    <string name="menu_aboutus">About Us</string>
+    <string name="menu_cart">My Cart</string>
 
     <!-- HOME FRAGMENT STRINGS -->
     <string name="Categories">Categories</string>

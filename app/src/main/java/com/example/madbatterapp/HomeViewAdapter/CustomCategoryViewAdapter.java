@@ -29,7 +29,7 @@ public class CustomCategoryViewAdapter extends RecyclerView.Adapter<CustomCatego
     @Override
     public void onBindViewHolder(@NonNull CustomCategoryHolder holder, int position) {
         CategoryItem categoryItem = categoryItems.get(position);
-        holder.image.setImageResource(categoryItem.getImage());
+        holder.image.setImageResource(categoryItems.get(position).getImage());
 
 
     }
