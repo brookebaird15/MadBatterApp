@@ -26,12 +26,12 @@
         tools:layout="@layout/fragment_cookie" />
     <fragment
         android:id="@+id/nav_brownies"
-        android:name="com.example.madbatterapp.BrowieFragment"
+        android:name="com.example.madbatterapp.Fragments.BrowieFragment"
         android:label="Brownies"
         tools:layout="@layout/fragment_browie" />
     <fragment
         android:id="@+id/nav_cake"
-        android:name="com.example.madbatterapp.CakeFragment"
+        android:name="com.example.madbatterapp.Fragments.CakeFragment"
         android:label="Cakes"
         tools:layout="@layout/fragment_cake" />
 </navigation>
