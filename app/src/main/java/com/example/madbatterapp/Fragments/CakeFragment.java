@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.madbatterapp.CakeViewAdapter.CakeItem;
+import com.example.madbatterapp.CakeViewAdapter.CustomCakeViewAdapter;
 import com.example.madbatterapp.R;
 
 import java.util.ArrayList;
@@ -66,6 +68,13 @@ public class CakeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_cake, container, false);
+        ArrayList<CakeItem> cakeItemArrayList = new ArrayList<>();
+        cakeItemArrayList.add(new CakeItem(R.drawable.chocomouse,getString(R.string.chocolate_mousse), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.caramelcake,getString(R.string.caramel_cake), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
+        RecyclerView recyclerView = view.findViewById(R.id.cakeRecyclerView);
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
+        recyclerView.setAdapter(new CustomCakeViewAdapter(cakeItemArrayList));
         return view;
     }
 }

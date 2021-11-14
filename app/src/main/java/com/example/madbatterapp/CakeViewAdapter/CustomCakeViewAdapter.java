@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeHolder> {
     private ArrayList<CakeItem> cakeItems;
-    public CustomCakeViewAdapter(ArrayList<CakeItem> cakeItems){this.cakeItems = cakeItems};
+    public CustomCakeViewAdapter(ArrayList<CakeItem> cakeItems){this.cakeItems = cakeItems;}
 
     @NonNull
     @Override

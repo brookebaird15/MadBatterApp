@@ -25,4 +25,9 @@
     <string name="Categories">Categories</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- CAKE FRAGMENT STRINGS -->
+    <string name="chocolate_mousse">Chocolate Mousse Cake</string>
+    <string name="caramel_cake">Caramel Cake</string>
+    <string name="sun_cake">Sunflower Cake</string>
 </resources>
