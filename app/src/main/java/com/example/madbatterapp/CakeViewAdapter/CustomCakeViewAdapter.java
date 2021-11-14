@@ -31,6 +31,10 @@ public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeHolder
         holder.name.setText(cakeItem.getName());
         holder.description.setText(cakeItem.getDescription());
 
+        /**TODO
+         * Set the clicklistener up in here to lead to the item activity? (is it possible to even make a generic fragment to hold all info??)
+         */
+
     }
 
     @Override
