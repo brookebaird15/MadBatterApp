@@ -68,12 +68,26 @@ public class CakeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_cake, container, false);
+        RecyclerView recyclerView = view.findViewById(R.id.largeCakeRecyclerView);
+        if(recyclerView != null){
+            //Large Screen
+             recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
+        }
+        else{
+            //small screen
+            recyclerView = view.findViewById(R.id.cakeRecyclerView);
+            recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1));
+        }
         ArrayList<CakeItem> cakeItemArrayList = new ArrayList<>();
         cakeItemArrayList.add(new CakeItem(R.drawable.chocomouse,getString(R.string.chocolate_mousse), "Lorem Ipsum"));
         cakeItemArrayList.add(new CakeItem(R.drawable.caramelcake,getString(R.string.caramel_cake), "Lorem Ipsum"));
         cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
-        RecyclerView recyclerView = view.findViewById(R.id.cakeRecyclerView);
-        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
+        cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
+
+        //Use either one adapter or the other depending on the screen width
+
         recyclerView.setAdapter(new CustomCakeViewAdapter(cakeItemArrayList));
         return view;
     }
