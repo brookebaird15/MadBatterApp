@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.example.madbatterapp.CakeViewAdapter.CakeItem;
 import com.example.madbatterapp.CakeViewAdapter.CustomCakeViewAdapter;
@@ -68,12 +69,22 @@ public class CakeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_cake, container, false);
+        //Clickable event
+        LinearLayout layout = view.findViewById(R.id.cardContainer);
+        layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                /** TODO
+                 * Lead to the cake activity 
+                 */
+            }
+        });
+
         RecyclerView recyclerView = view.findViewById(R.id.largeCakeRecyclerView);
         if(recyclerView != null){
             //Large Screen
              recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
-        }
-        else{
+        } else{
             //small screen
             recyclerView = view.findViewById(R.id.cakeRecyclerView);
             recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1));
@@ -85,6 +96,7 @@ public class CakeFragment extends Fragment {
         cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
         cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
         cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
+
 
         //Use either one adapter or the other depending on the screen width
 
