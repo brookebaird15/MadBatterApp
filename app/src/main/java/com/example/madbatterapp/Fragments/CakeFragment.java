@@ -73,7 +73,7 @@ public class CakeFragment extends Fragment {
         cakeItemArrayList.add(new CakeItem(R.drawable.caramelcake,getString(R.string.caramel_cake), "Lorem Ipsum"));
         cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
         RecyclerView recyclerView = view.findViewById(R.id.cakeRecyclerView);
-        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
         recyclerView.setAdapter(new CustomCakeViewAdapter(cakeItemArrayList));
         return view;
     }
