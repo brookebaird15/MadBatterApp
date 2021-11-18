@@ -10,6 +10,11 @@
 
     <!-- CONTENT DESCRIPTIONS FOR IMAGES -->
     <string name="Welcome">Welcome</string>
+    <string name="mousse_description">Chocolate Mousse Cake</string>
+    <string name="carm_cake">Caramel Cake</string>
+    <string name="sunflower_cake">Sunflower Cake</string>
+    <string name="blackberry_cake">Blackberry Cake</string>
+    <string name="lemonslice_cake">Lemon Cake</string>
 
     <!-- MENU STRINGS-->
     <string name="menu_home">Home</string>
@@ -30,4 +35,6 @@
     <string name="chocolate_mousse">Chocolate Mousse Cake</string>
     <string name="caramel_cake">Caramel Cake</string>
     <string name="sun_cake">Sunflower Cake</string>
+    <string name="berry_cake">Blackberry Cake</string>
+    <string name="lemon_cake">Lemon Cake</string>
 </resources>

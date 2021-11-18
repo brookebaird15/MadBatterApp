@@ -70,15 +70,15 @@ public class CakeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_cake, container, false);
         //Clickable event
-        LinearLayout layout = view.findViewById(R.id.cardContainer);
-        layout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                /** TODO
-                 * Lead to the cake activity 
-                 */
-            }
-        });
+//        LinearLayout layout = view.findViewById(R.id.cardContainer);
+//        layout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                /** TODO
+//                 * Lead to the cake activity
+//                 */
+//            }
+//        });
 
         RecyclerView recyclerView = view.findViewById(R.id.largeCakeRecyclerView);
         if(recyclerView != null){
@@ -93,8 +93,8 @@ public class CakeFragment extends Fragment {
         cakeItemArrayList.add(new CakeItem(R.drawable.chocomouse,getString(R.string.chocolate_mousse), "Lorem Ipsum"));
         cakeItemArrayList.add(new CakeItem(R.drawable.caramelcake,getString(R.string.caramel_cake), "Lorem Ipsum"));
         cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
-        cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
-        cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.blackberrycake,getString(R.string.berry_cake), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.lemoncake,getString(R.string.lemon_cake), "Lorem Ipsum"));
         cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
 
 
