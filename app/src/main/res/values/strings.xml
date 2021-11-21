@@ -37,4 +37,8 @@
     <string name="sun_cake">Sunflower Cake</string>
     <string name="berry_cake">Blackberry Cake</string>
     <string name="lemon_cake">Lemon Cake</string>
+    <string name="birth_cake">Birthday Cake</string>
+    <string name="vanilla_cake">Vanilla Cake</string>
+    <string name="fun_cake">Funfetti Cake</string>
+    <string name="rose_cake">Rose Cake</string>
 </resources>
