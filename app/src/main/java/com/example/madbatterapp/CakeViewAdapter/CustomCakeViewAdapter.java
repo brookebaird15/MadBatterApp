@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.madbatterapp.CartListView.Product;
 import com.example.madbatterapp.R;
 
 import java.util.ArrayList;
@@ -26,8 +27,8 @@ public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeHolder
 
     @Override
     public void onBindViewHolder(@NonNull CustomCakeHolder holder, int position) {
-        CakeItem cakeItem = cakeItems.get(position);
-        holder.image.setImageResource(cakeItem.getImage());
+        Product cakeItem = cakeItems.get(position);
+        holder.image.setImageResource(cakeItem.getProductImg());
         holder.name.setText(cakeItem.getName());
         holder.description.setText(cakeItem.getDescription());
 

@@ -1,43 +1,20 @@
 package com.example.madbatterapp.CakeViewAdapter;
 
 
-public class CakeItem {
-    private int image;
-    private String name;
-    private String description;
+import com.example.madbatterapp.CartListView.Product;
+
+public class CakeItem extends Product {
 
     /**
      * Constructor
      */
-    public CakeItem(int image, String name, String description) {
-        this.image = image;
-        this.name = name;
-        this.description = description;
-    }
-    /**
-     * Getters & Setters
-     */
-    public int getImage() {
-        return image;
+
+    public CakeItem(int productImg, String title, String description, double price) {
+        super(productImg, title, description, price);
     }
 
-    public void setImage(int image) {
-        this.image = image;
-    }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public String getDescription() {
-        return description;
-    }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
 }

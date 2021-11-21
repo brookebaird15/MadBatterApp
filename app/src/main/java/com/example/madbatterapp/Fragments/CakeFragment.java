@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 
 import com.example.madbatterapp.CakeViewAdapter.CakeItem;
 import com.example.madbatterapp.CakeViewAdapter.CustomCakeViewAdapter;
+import com.example.madbatterapp.CartListView.Product;
 import com.example.madbatterapp.R;
 
 import java.util.ArrayList;
@@ -90,15 +91,15 @@ public class CakeFragment extends Fragment {
             recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1));
         }
         ArrayList<CakeItem> cakeItemArrayList = new ArrayList<>();
-        cakeItemArrayList.add(new CakeItem(R.drawable.chocomouse,getString(R.string.chocolate_mousse), "Lorem Ipsum"));
-        cakeItemArrayList.add(new CakeItem(R.drawable.caramelcake,getString(R.string.caramel_cake), "Lorem Ipsum"));
-        cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
-        cakeItemArrayList.add(new CakeItem(R.drawable.blackberrycake,getString(R.string.berry_cake), "Lorem Ipsum"));
-        cakeItemArrayList.add(new CakeItem(R.drawable.lemoncake,getString(R.string.lemon_cake), "Lorem Ipsum"));
-        cakeItemArrayList.add(new CakeItem(R.drawable.birthdaycake,getString(R.string.birth_cake), "Lorem Ipsum"));
-        cakeItemArrayList.add(new CakeItem(R.drawable.vanillacake,getString(R.string.vanilla_cake), "Lorem Ipsum"));
-        cakeItemArrayList.add(new CakeItem(R.drawable.funfetticake,getString(R.string.fun_cake), "Lorem Ipsum"));
-        cakeItemArrayList.add(new CakeItem(R.drawable.rosecake,getString(R.string.rose_cake), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.chocomouse,getString(R.string.chocolate_mousse), "Lorem Ipsum", 35.00));
+        cakeItemArrayList.add(new CakeItem(R.drawable.caramelcake,getString(R.string.caramel_cake), "Lorem Ipsum", 35.00));
+        cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum", 55.00));
+        cakeItemArrayList.add(new CakeItem(R.drawable.blackberrycake,getString(R.string.berry_cake), "Lorem Ipsum", 49.00));
+        cakeItemArrayList.add(new CakeItem(R.drawable.lemoncake,getString(R.string.lemon_cake), "Lorem Ipsum", 35.00));
+        cakeItemArrayList.add(new CakeItem(R.drawable.birthdaycake,getString(R.string.birth_cake), "Lorem Ipsum", 30.00));
+        cakeItemArrayList.add(new CakeItem(R.drawable.vanillacake,getString(R.string.vanilla_cake), "Lorem Ipsum", 30.00));
+        cakeItemArrayList.add(new CakeItem(R.drawable.funfetticake,getString(R.string.fun_cake), "Lorem Ipsum", 30.00));
+        cakeItemArrayList.add(new CakeItem(R.drawable.rosecake,getString(R.string.rose_cake), "Lorem Ipsum", 55.00));
 
 
         //Use either one adapter or the other depending on the screen width

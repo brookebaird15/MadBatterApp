@@ -19,7 +19,9 @@ public class ShoppingCartCatalogue {
         if (catalogue == null){
             //make new catalogue list
             catalogue = new ArrayList<Product>();
-            catalogue.add(new Product("Chocolate Mousse", R.drawable.chocomouse, "Lorem Ipsum", 35.00));
+            catalogue.add(new CakeItem(R.drawable.chocomouse,res.getString(R.string.chocolate_mousse), "Lorem Ipsum", 35.00));
+
         }
+        return catalogue;
     }
 }
