@@ -1,4 +1,4 @@
-package com.example.madbatterapp.HomeViewAdapter.POJOS;
+package com.example.madbatterapp.HomeViewAdapter;
 
 public class CategoryItem {
     private int image;

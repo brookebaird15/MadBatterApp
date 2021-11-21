@@ -3,12 +3,19 @@ package com.example.madbatterapp.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
+import com.example.madbatterapp.CakeViewAdapter.CakeItem;
+import com.example.madbatterapp.CakeViewAdapter.CustomCakeViewAdapter;
 import com.example.madbatterapp.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,6 +68,42 @@ public class CakeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cake, container, false);
+        View view = inflater.inflate(R.layout.fragment_cake, container, false);
+        //Clickable event
+//        LinearLayout layout = view.findViewById(R.id.cardContainer);
+//        layout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                /** TODO
+//                 * Lead to the cake activity
+//                 */
+//            }
+//        });
+
+        RecyclerView recyclerView = view.findViewById(R.id.largeCakeRecyclerView);
+        if(recyclerView != null){
+            //Large Screen
+             recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
+        } else{
+            //small screen
+            recyclerView = view.findViewById(R.id.cakeRecyclerView);
+            recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1));
+        }
+        ArrayList<CakeItem> cakeItemArrayList = new ArrayList<>();
+        cakeItemArrayList.add(new CakeItem(R.drawable.chocomouse,getString(R.string.chocolate_mousse), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.caramelcake,getString(R.string.caramel_cake), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.sunflowercake,getString(R.string.sun_cake), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.blackberrycake,getString(R.string.berry_cake), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.lemoncake,getString(R.string.lemon_cake), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.birthdaycake,getString(R.string.birth_cake), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.vanillacake,getString(R.string.vanilla_cake), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.funfetticake,getString(R.string.fun_cake), "Lorem Ipsum"));
+        cakeItemArrayList.add(new CakeItem(R.drawable.rosecake,getString(R.string.rose_cake), "Lorem Ipsum"));
+
+
+        //Use either one adapter or the other depending on the screen width
+
+        recyclerView.setAdapter(new CustomCakeViewAdapter(cakeItemArrayList));
+        return view;
     }
 }

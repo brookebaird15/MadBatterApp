@@ -13,7 +13,10 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/MadBatterApp/app/src/main/res/layout/custom_category_card.xml" value="0.16" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MadBatterApp/app/src/main/res/layout/fragment_about.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MadBatterApp/app/src/main/res/layout/fragment_cake.xml" value="0.2" />
+<<<<<<< HEAD
         <entry key="..\:/Users/user/AndroidStudioProjects/MadBatterApp/app/src/main/res/layout/fragment_cart.xml" value="0.176" />
+=======
+>>>>>>> development
         <entry key="..\:/Users/user/AndroidStudioProjects/MadBatterApp/app/src/main/res/layout/fragment_home.xml" value="0.176" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MadBatterApp/app/src/main/res/layout/fragment_item.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MadBatterApp/app/src/main/res/layout/fragment_item_list.xml" value="0.264" />
