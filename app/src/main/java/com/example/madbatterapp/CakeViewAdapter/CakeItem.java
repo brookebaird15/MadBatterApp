@@ -1,5 +1,6 @@
 package com.example.madbatterapp.CakeViewAdapter;
 
+
 public class CakeItem {
     private int image;
     private String name;
