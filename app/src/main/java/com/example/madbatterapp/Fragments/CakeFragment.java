@@ -70,17 +70,8 @@ public class CakeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_cake, container, false);
-        //Clickable event
-//        LinearLayout layout = view.findViewById(R.id.cardContainer);
-//        layout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                /** TODO
-//                 * Lead to the cake activity
-//                 */
-//            }
-//        });
 
+        //Use either one adapter or the other depending on the screen width
         RecyclerView recyclerView = view.findViewById(R.id.largeCakeRecyclerView);
         if(recyclerView != null){
             //Large Screen
@@ -100,9 +91,6 @@ public class CakeFragment extends Fragment {
         cakeItemArrayList.add(new CakeItem(R.drawable.vanillacake,getString(R.string.vanilla_cake), "Lorem Ipsum", 30.00));
         cakeItemArrayList.add(new CakeItem(R.drawable.funfetticake,getString(R.string.fun_cake), "Lorem Ipsum", 30.00));
         cakeItemArrayList.add(new CakeItem(R.drawable.rosecake,getString(R.string.rose_cake), "Lorem Ipsum", 55.00));
-
-
-        //Use either one adapter or the other depending on the screen width
 
         recyclerView.setAdapter(new CustomCakeViewAdapter(cakeItemArrayList));
         return view;
