@@ -1,5 +1,6 @@
 package com.example.madbatterapp.CakeViewAdapter;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +17,11 @@ import java.util.ArrayList;
 
 public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeHolder> {
     private ArrayList<CakeItem> cakeItems;
-    public CustomCakeViewAdapter(ArrayList<CakeItem> cakeItems){this.cakeItems = cakeItems;}
+    private ItemClickListener clickListener;
+    public CustomCakeViewAdapter(ArrayList<CakeItem> cakeItems, ItemClickListener clickListener){
+        this.cakeItems = cakeItems;
+        this.clickListener = clickListener;}
+
 
     @NonNull
     @Override
@@ -26,15 +31,20 @@ public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CustomCakeHolder holder, int position) {
+    public void onBindViewHolder(@NonNull CustomCakeHolder holder, @SuppressLint("RecyclerView") int position) {
         Product cakeItem = cakeItems.get(position);
         holder.image.setImageResource(cakeItem.getProductImg());
         holder.name.setText(cakeItem.getName());
         holder.description.setText(cakeItem.getDescription());
 
-        /**TODO
-         * Set the clicklistener up in here to lead to the item activity? (is it possible to even make a generic fragment to hold all info??)
-         */
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clickListener.onItemClick(cakeItems.get(position));
+            }
+        });
+
+
 
     }
 
