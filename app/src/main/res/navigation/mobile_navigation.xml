@@ -52,5 +52,5 @@
         android:id="@+id/product_details_fragment"
         android:name="com.example.madbatterapp.Fragments.ProductDetailsFragment"
         android:label="fragment_product_details_fragment"
-        tools:layout="@layout/fragment_product_details_fragment" />
+        tools:layout="@layout/fragment_product_details" />
 </navigation>

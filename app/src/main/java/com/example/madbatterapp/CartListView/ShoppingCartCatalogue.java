@@ -2,7 +2,6 @@ package com.example.madbatterapp.CartListView;
 
 import android.content.res.Resources;
 
-import com.example.madbatterapp.CakeViewAdapter.CakeItem;
 import com.example.madbatterapp.R;
 
 import java.util.ArrayList;

@@ -18,7 +18,7 @@ import com.example.madbatterapp.R;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
-public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeHolder> {
+public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeViewAdapter.CustomCakeHolder> {
 
     private ArrayList<Product> cakeItems;
 
