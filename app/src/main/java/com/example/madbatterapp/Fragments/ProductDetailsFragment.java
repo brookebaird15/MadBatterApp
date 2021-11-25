@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.madbatterapp.R;
 
@@ -62,7 +64,15 @@ public class ProductDetailsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_product_details, container, false);
-
+        Bundle extras = getArguments();
+        if (extras != null){
+            ImageView productImage = view.findViewById(R.id.ImageViewProduct);
+            productImage.setImageResource(extras.getInt("IMAGE"));
+            TextView productName = view.findViewById(R.id.TextViewProductTitle);
+            productName.setText(extras.getString("NAME"));
+            TextView productDetails = view.findViewById(R.id.TextViewProductDetails);
+            productDetails.setText(extras.getString("DESC"));
+        }
         return view;
     }
 }
