@@ -1,6 +1,7 @@
 package com.example.madbatterapp.CakeViewAdapter;
 
 import android.annotation.SuppressLint;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,19 +9,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.madbatterapp.CartListView.Product;
 import com.example.madbatterapp.R;
 
+import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
 public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeHolder> {
-    private ArrayList<CakeItem> cakeItems;
-    private ItemClickListener clickListener;
-    public CustomCakeViewAdapter(ArrayList<CakeItem> cakeItems, ItemClickListener clickListener){
-        this.cakeItems = cakeItems;
-        this.clickListener = clickListener;}
+
+    private ArrayList<Product> cakeItems;
+
+    public CustomCakeViewAdapter(ArrayList<Product> cakeItems){
+        this.cakeItems = cakeItems;}
 
 
     @NonNull
@@ -31,21 +34,11 @@ public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CustomCakeHolder holder, @SuppressLint("RecyclerView") int position) {
-        Product cakeItem = cakeItems.get(position);
-        holder.image.setImageResource(cakeItem.getProductImg());
-        holder.name.setText(cakeItem.getName());
-        holder.description.setText(cakeItem.getDescription());
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                clickListener.onItemClick(cakeItems.get(position));
-            }
-        });
-
-
-
+    public void onBindViewHolder(@NonNull CustomCakeHolder holder,  int position) {
+        Product currentItem = cakeItems.get(position);
+        holder.image.setImageResource(currentItem.getProductImg());
+        holder.name.setText(currentItem.getName());
+        holder.description.setText(currentItem.getDescription());
     }
 
     @Override
@@ -53,19 +46,33 @@ public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeHolder
         if (cakeItems != null){
             return cakeItems.size();
         }
-        return 0; 
+        return 0;
+    }
+    class CustomCakeHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+        protected ImageView image;
+        protected TextView name;
+        protected TextView description;
+
+        public CustomCakeHolder(@NonNull View itemView) {
+            super(itemView);
+            this.image = itemView.findViewById(R.id.cakeImg);
+            this.name = itemView.findViewById(R.id.name);
+            this.description = itemView.findViewById(R.id.description);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            Product currentItem = cakeItems.get(getAdapterPosition());
+            Bundle bundle = new Bundle();
+            bundle.putString("NAME", currentItem.getName());
+            bundle.putInt("IMAGE", currentItem.getProductImg());
+            bundle.putString("DESC", currentItem.getDescription());
+            Navigation.findNavController(view).navigate(R.id.action_nav_cake_to_product_details_fragment, bundle);
+
+
+        }
     }
 }
-class CustomCakeHolder extends RecyclerView.ViewHolder{
-    protected ImageView image;
-    protected TextView name;
-    protected TextView description;
 
-    public CustomCakeHolder(@NonNull View itemView) {
-        super(itemView);
-        this.image = itemView.findViewById(R.id.cakeImg);
-        this.name = itemView.findViewById(R.id.name);
-        this.description = itemView.findViewById(R.id.description);
 
-    }
-}

@@ -5,7 +5,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.CheckBox;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -55,11 +54,11 @@ public class CustomCartListAdapter extends BaseAdapter {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent){
         final ViewItem item;
         if (convertView == null){
-            convertView = layoutInflater.inflate(R.layout.custom_item_layout, parent, false );
+            convertView = layoutInflater.inflate(R.layout.custom_catalog_layout, parent, false );
             item = new ViewItem();
 
-            item.productImgView = convertView.findViewById(R.id.itemImg);
-            item.productTitle = convertView.findViewById(R.id.itemTitle);
+            item.productImgView = convertView.findViewById(R.id.productImg);
+            item.productTitle = convertView.findViewById(R.id.productTitle);
             item.productCheckbox = convertView.findViewById(R.id.checkbox);
 
             convertView.setTag(item);

@@ -3,14 +3,14 @@ package com.example.madbatterapp.CakeViewAdapter;
 
 import com.example.madbatterapp.CartListView.Product;
 
-public class CakeItem extends Product {
+public class CakeItem{
 
     /**
      * Constructor
      */
 
-    public CakeItem(int productImg, String title, String description, double price) {
-        super(productImg, title, description, price);
+    public CakeItem(int drawable, String title, String description, double price) {
+        super(drawable, title, description, price);
     }
 
 

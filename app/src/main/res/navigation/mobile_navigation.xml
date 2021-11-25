@@ -33,7 +33,11 @@
         android:id="@+id/nav_cake"
         android:name="com.example.madbatterapp.Fragments.CakeFragment"
         android:label="Cakes"
-        tools:layout="@layout/fragment_cake" />
+        tools:layout="@layout/fragment_cake" >
+        <action
+            android:id="@+id/action_nav_cake_to_product_details_fragment"
+            app:destination="@id/product_details_fragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_about"
         android:name="com.example.madbatterapp.Fragments.AboutFragment"
@@ -44,4 +48,9 @@
         android:name="com.example.madbatterapp.Fragments.CartFragment"
         android:label="My Cart"
         tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/product_details_fragment"
+        android:name="com.example.madbatterapp.Fragments.ProductDetailsFragment"
+        android:label="fragment_product_details_fragment"
+        tools:layout="@layout/fragment_product_details_fragment" />
 </navigation>

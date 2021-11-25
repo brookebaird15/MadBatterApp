@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/itemImg"
+        android:id="@+id/productImg"
         android:layout_width="108dp"
         android:layout_height="100dp"
         android:layout_marginStart="92dp"
@@ -15,14 +15,14 @@
         android:layout_weight="1"
         android:adjustViewBounds="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/description"
+        app:layout_constraintEnd_toStartOf="@+id/productTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/placeholder" />
 
     <TextView
-        android:id="@+id/itemTitle"
+        android:id="@+id/productTitle"
         android:layout_width="481dp"
         android:layout_height="65dp"
         android:layout_marginStart="24dp"
@@ -33,7 +33,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/itemImg" />
+        app:layout_constraintStart_toEndOf="@+id/productImg" />
 
     <CheckBox
         android:id="@+id/checkbox"
@@ -46,7 +46,7 @@
         android:focusable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/description"
+        app:layout_constraintStart_toEndOf="@+id/productTitle"
         app:layout_constraintTop_toTopOf="parent" />
 
 
