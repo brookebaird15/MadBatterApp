@@ -28,9 +28,6 @@ public class CakeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_cake, container, false);
 
-        //Obtain reference to catalogue
-        productList = ShoppingCartCatalogue.getCatalogue(getResources());
-
         //Use either one adapter or the other depending on the screen width
         RecyclerView recyclerView = view.findViewById(R.id.largeCakeRecyclerView);
         if(recyclerView != null){
@@ -42,7 +39,7 @@ public class CakeFragment extends Fragment {
             recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1));
         }
 
-        recyclerView.setAdapter(new CustomCakeViewAdapter((ArrayList<Product>) productList));
+        recyclerView.setAdapter(new CustomCakeViewAdapter(ShoppingCartCatalogue.getInstance().getMenuOptions()));
         return view;
     }
 

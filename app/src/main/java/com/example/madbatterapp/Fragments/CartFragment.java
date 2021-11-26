@@ -30,7 +30,6 @@ public class CartFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_cart, container, false);
-        shoppingCartList = ShoppingCartCatalogue.getCart();
 
         //Clear checkboxes of selections
         for (int i = 0; i < shoppingCartList.size(); i++) {
