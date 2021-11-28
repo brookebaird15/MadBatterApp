@@ -73,6 +73,7 @@ public class ProductDetailsFragment extends Fragment {
             TextView productDetails = view.findViewById(R.id.TextViewProductDetails);
             productDetails.setText(extras.getString("DESC"));
         }
+        //ADD FAB BUTTON HERE
         return view;
     }
 }
