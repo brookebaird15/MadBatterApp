@@ -2,6 +2,7 @@ package com.example.madbatterapp.Fragments;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -10,7 +11,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.madbatterapp.MainActivity;
 import com.example.madbatterapp.R;
+import com.example.madbatterapp.databinding.ActivityMainBinding;
+import com.google.android.material.snackbar.Snackbar;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -18,6 +22,8 @@ import com.example.madbatterapp.R;
  * create an instance of this fragment.
  */
 public class ProductDetailsFragment extends Fragment {
+    private @NonNull
+    ActivityMainBinding binding;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -64,6 +70,18 @@ public class ProductDetailsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_product_details, container, false);
+        //ADD THIS TO YOUR ACTUAL ITEM FRAGMENT
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        MainActivity.fab.show();
+        MainActivity.fab.setImageResource(R.drawable.ic_baseline_add_24);
+        MainActivity.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action2", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+
         Bundle extras = getArguments();
         if (extras != null){
             ImageView productImage = view.findViewById(R.id.ImageViewProduct);
