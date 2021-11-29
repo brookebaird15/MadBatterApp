@@ -1,11 +1,8 @@
 package com.example.madbatterapp.CartListView;
 
-import android.content.res.Resources;
-
 import com.example.madbatterapp.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class ShoppingCartCatalogue {
     private static ShoppingCartCatalogue instance;

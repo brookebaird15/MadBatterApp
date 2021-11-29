@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.madbatterapp.CartListView.ShoppingCartCatalogue;
 import com.example.madbatterapp.MainActivity;
 import com.example.madbatterapp.R;
 import com.example.madbatterapp.databinding.ActivityMainBinding;
@@ -77,6 +78,7 @@ public class ProductDetailsFragment extends Fragment {
         MainActivity.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                ShoppingCartCatalogue.getInstance().getCart().add(ShoppingCartCatalogue.getInstance().getMenuOptions());
                 Snackbar.make(view, "Replace with your own action2", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
@@ -91,7 +93,6 @@ public class ProductDetailsFragment extends Fragment {
             TextView productDetails = view.findViewById(R.id.TextViewProductDetails);
             productDetails.setText(extras.getString("DESC"));
         }
-        //ADD FAB BUTTON HERE
         return view;
     }
 }
