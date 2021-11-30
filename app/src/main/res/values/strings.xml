@@ -24,4 +24,12 @@
     <string name="Categories">Categories</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- ABOUT FRAGMENT STRINGS -->
+    <string name="about">Hi! My name is Allison and you may recognize me if you\'ve been to our store. I\'m the proud owner of
+    the Mad Batter Bakery, which has been open for 5 years! I was 26 when I started this bakery and have always loved baking
+    since I was a child. It's been a pleasure to share my passion and excitement with the community. So thank you, for
+    letting me sharing my love with y'all!</string>
+    <string name="faqtitle">FAQ's</string>
+    <string name="aboutus">About Us</string>
 </resources>

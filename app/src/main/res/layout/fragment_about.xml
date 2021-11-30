@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".Fragments.AboutFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,37 +18,42 @@
             android:layout_width="398dp"
             android:layout_height="358dp"
             android:src="@drawable/bakeryowner"
-            app:civ_border_color="#FF000000"
+            app:civ_border_color="@color/forestgreen"
             app:civ_border_width="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintHorizontal_bias="0.103"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.09" />
+            app:layout_constraintVertical_bias="0.075" />
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="511dp"
+            android:layout_width="888dp"
             android:layout_height="55dp"
             android:layout_marginBottom="44dp"
-            android:text="TextView"
+            android:background="@color/forestgreen"
+            android:text="@string/faqtitle"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
             app:layout_constraintBottom_toTopOf="@+id/faqList"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintHorizontal_bias="0.512"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="379dp"
-            android:layout_height="250dp"
-            android:layout_marginTop="160dp"
-            android:layout_marginEnd="16dp"
-            android:text="TextView"
+            android:layout_width="387dp"
+            android:layout_height="279dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/borderforimage"
+            android:maxLines="10"
+            android:padding="10dp"
+            android:text="@string/about"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <ListView
             android:id="@+id/faqList"
@@ -62,6 +69,17 @@
 
 
         </ListView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="288dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="92dp"
+            android:text="@string/aboutus"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="446dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
