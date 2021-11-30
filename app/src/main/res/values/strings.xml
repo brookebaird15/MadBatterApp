@@ -28,8 +28,17 @@
     <!-- ABOUT FRAGMENT STRINGS -->
     <string name="about">Hi! My name is Allison and you may recognize me if you\'ve been to our store. I\'m the proud owner of
     the Mad Batter Bakery, which has been open for 5 years! I was 26 when I started this bakery and have always loved baking
-    since I was a child. It's been a pleasure to share my passion and excitement with the community. So thank you, for
-    letting me sharing my love with y'all!</string>
-    <string name="faqtitle">FAQ's</string>
+    since I was a child. It\'s been a pleasure to share my passion and excitement with the community. So thank you, for
+    letting me sharing my love with y\'all!</string>
+    <string name="faqtitle">FAQ\'s</string>
     <string name="aboutus">About Us</string>
+    <string name="orderQuestion">How long will it take for you to complete my order?</string>
+    <string name="orderAnswer">It takes between 24 to 72 hours for an order to be completed. Once completed, you\'ll be notified via email</string>
+    <string name="hoursQuestion">What are your hours?</string>
+    <string name="hoursAnswer">We\'re open Monday-Saturday from 10AM until 5PM</string>
+    <string name="requestQuestion">If I order a cake, can I get writing on it?</string>
+    <string name="requestAnswer">You sure can! Just let me know in the email upon checkout</string>
+    <string name="placeOrderQuestion">Can I place an order over the phone?</string>
+    <string name="placeOrderAnswer">Due to accountability, we do not take orders over the phone. Please order via the app
+    or our website!</string>
 </resources>

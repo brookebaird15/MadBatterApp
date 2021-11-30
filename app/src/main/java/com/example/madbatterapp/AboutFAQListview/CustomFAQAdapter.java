@@ -14,10 +14,11 @@ import com.example.madbatterapp.R;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CustomFAQAdapter extends ArrayAdapter<FAQItem> {
-    public CustomFAQAdapter(@NonNull Context context, int resource, @NonNull List<FAQItem> items) {
+    public CustomFAQAdapter(@NonNull Context context, @NonNull ArrayList<FAQItem> items) {
         super(context, 0, items);
     }
 

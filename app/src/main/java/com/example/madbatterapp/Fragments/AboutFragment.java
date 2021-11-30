@@ -9,16 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.example.madbatterapp.AboutFAQListview.CustomFAQAdapter;
 import com.example.madbatterapp.AboutFAQListview.FAQItem;
 import com.example.madbatterapp.R;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link AboutFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class AboutFragment extends Fragment {
     ListView listView;
 
@@ -29,10 +26,11 @@ public class AboutFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_about, container, false);
         listView = view.findViewById(R.id.faqList);
         ArrayList<FAQItem> faqItemArrayList = new ArrayList<>();
-        faqItemArrayList.add(new FAQItem());
-        faqItemArrayList.add(new FAQItem());
-        faqItemArrayList.add(new FAQItem());
-        faqItemArrayList.add(new FAQItem());
+        faqItemArrayList.add(new FAQItem(getString(R.string.orderQuestion), getString(R.string.orderAnswer)));
+        faqItemArrayList.add(new FAQItem(getString(R.string.hoursQuestion), getString(R.string.hoursAnswer)));
+        faqItemArrayList.add(new FAQItem(getString(R.string.requestQuestion), getString(R.string.requestAnswer)));
+        faqItemArrayList.add(new FAQItem(getString(R.string.placeOrderQuestion), getString(R.string.placeOrderAnswer)));
+        listView.setAdapter(new CustomFAQAdapter(getContext(), faqItemArrayList));
         return view;
 
     }
