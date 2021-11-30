@@ -2,7 +2,6 @@ package com.example.madbatterapp.Fragments;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,14 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.madbatterapp.CakeViewAdapter.CustomCakeViewAdapter;
-import com.example.madbatterapp.CartListView.Product;
-import com.example.madbatterapp.CartListView.ShoppingCartCatalogue;
-import com.example.madbatterapp.MainActivity;
+import com.example.madbatterapp.Product;
+import com.example.madbatterapp.ShoppingCartCatalogue;
 import com.example.madbatterapp.R;
-import com.example.madbatterapp.databinding.ActivityMainBinding;
-import com.google.android.material.snackbar.Snackbar;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CakeFragment extends Fragment {

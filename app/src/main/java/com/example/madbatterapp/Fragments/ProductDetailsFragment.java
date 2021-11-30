@@ -11,14 +11,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.madbatterapp.CartListView.Product;
-import com.example.madbatterapp.CartListView.ShoppingCartCatalogue;
+import com.example.madbatterapp.ShoppingCartCatalogue;
 import com.example.madbatterapp.MainActivity;
 import com.example.madbatterapp.R;
 import com.example.madbatterapp.databinding.ActivityMainBinding;
 import com.google.android.material.snackbar.Snackbar;
-
-import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.

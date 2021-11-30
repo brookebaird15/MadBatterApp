@@ -1,6 +1,4 @@
-package com.example.madbatterapp.CartListView;
-
-import com.example.madbatterapp.R;
+package com.example.madbatterapp;
 
 import java.util.ArrayList;
 

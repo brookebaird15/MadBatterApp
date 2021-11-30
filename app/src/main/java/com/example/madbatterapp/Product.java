@@ -1,4 +1,4 @@
-package com.example.madbatterapp.CartListView;
+package com.example.madbatterapp;
 
 import android.graphics.drawable.Drawable;
 

@@ -1,6 +1,5 @@
 package com.example.madbatterapp.CakeViewAdapter;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,10 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.madbatterapp.CartListView.Product;
+import com.example.madbatterapp.Product;
 import com.example.madbatterapp.R;
 
-import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
 public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeViewAdapter.CustomCakeHolder> {
