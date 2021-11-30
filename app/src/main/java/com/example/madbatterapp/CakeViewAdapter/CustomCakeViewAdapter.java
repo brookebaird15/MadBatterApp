@@ -63,11 +63,12 @@ public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeViewAd
 
         @Override
         public void onClick(View view) {
-            Product currentItem = cakeItems.get(getAdapterPosition());
+            Product currentItem = cakeItems.get(getAbsoluteAdapterPosition());
             Bundle bundle = new Bundle();
-            bundle.putString("NAME", String.valueOf((currentItem.getName())));
+            bundle.putInt("NAME", ((currentItem.getName())));
             bundle.putInt("IMAGE", currentItem.getProductImg());
-            bundle.putString("DESC", String.valueOf((currentItem.getDescription())));
+            bundle.putInt("POST", getAbsoluteAdapterPosition());
+            bundle.putInt("DESC", ((currentItem.getDescription())));
             Navigation.findNavController(view).navigate(R.id.action_nav_cake_to_product_details_fragment, bundle);
 
 

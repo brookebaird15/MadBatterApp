@@ -11,11 +11,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.madbatterapp.CartListView.Product;
 import com.example.madbatterapp.CartListView.ShoppingCartCatalogue;
 import com.example.madbatterapp.MainActivity;
 import com.example.madbatterapp.R;
 import com.example.madbatterapp.databinding.ActivityMainBinding;
 import com.google.android.material.snackbar.Snackbar;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +28,7 @@ import com.google.android.material.snackbar.Snackbar;
 public class ProductDetailsFragment extends Fragment {
     private @NonNull
     ActivityMainBinding binding;
+    Bundle extras;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -78,20 +82,23 @@ public class ProductDetailsFragment extends Fragment {
         MainActivity.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ShoppingCartCatalogue.getInstance().getCart().add(ShoppingCartCatalogue.getInstance().getMenuOptions());
-                Snackbar.make(view, "Replace with your own action2", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                if(extras != null) {
+                    ShoppingCartCatalogue.getInstance().getCart().add(ShoppingCartCatalogue.getInstance().getMenuOptions().get(extras.getInt("POST")));
+                    //ArrayList<Product> currentList = ShoppingCartCatalogue.getInstance().getCart();
+                    Snackbar.make(view, "Item added", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                }
             }
         });
 
-        Bundle extras = getArguments();
+        extras = getArguments();
         if (extras != null){
             ImageView productImage = view.findViewById(R.id.ImageViewProduct);
             productImage.setImageResource(extras.getInt("IMAGE"));
             TextView productName = view.findViewById(R.id.TextViewProductTitle);
-            productName.setText(extras.getString("NAME"));
+            productName.setText(getString(extras.getInt("NAME")));
             TextView productDetails = view.findViewById(R.id.TextViewProductDetails);
-            productDetails.setText(extras.getString("DESC"));
+            productDetails.setText(getString(extras.getInt("DESC")));
         }
         return view;
     }
