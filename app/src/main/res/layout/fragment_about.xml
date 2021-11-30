@@ -50,7 +50,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ListView
-            android:id="@+id/aboutListView"
+            android:id="@+id/faqList"
             android:layout_width="893dp"
             android:layout_height="554dp"
             android:layout_marginStart="24dp"
