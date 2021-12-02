@@ -56,6 +56,8 @@ public class CartFragment extends Fragment {
                     startActivity(i);
                 }
             });
+            //this doesnt actually go here so like... why :/
+            //things to not figure out at 1am lol
         } else {
                     Snackbar.make(view, "Your cart is empty! Please add to the cart.", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
