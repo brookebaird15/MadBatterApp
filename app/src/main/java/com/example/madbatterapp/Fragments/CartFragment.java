@@ -45,21 +45,20 @@ public class CartFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     String[] emailAddress = {"madbatterbakery@gmail.com"};
+                    StringBuilder sb = new StringBuilder();
+                    for(Product s : ShoppingCartCatalogue.getInstance().getCart()){
+                        sb.append(s);
+                        sb.append("\n");
+                    }
                     Intent i = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"));
                     i.putExtra(Intent.EXTRA_EMAIL, emailAddress);
-                    i.putExtra(Intent.EXTRA_TEXT, "Thank you for your purchase of: " + ShoppingCartCatalogue.getInstance().getCart() + ". " +
-                            "You will receive an email when your order is ready for pickup. Please pay in person for your order");
+                    i.putExtra(Intent.EXTRA_TEXT, "I am ordering " + sb.toString() + "from your bakery." );
                     startActivity(i);
                 }
             });
         } else {
-            checkoutBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
                     Snackbar.make(view, "Your cart is empty! Please add to the cart.", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
-                }
-            });
         }
         return view;
     }
