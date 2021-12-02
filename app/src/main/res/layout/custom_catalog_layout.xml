@@ -9,10 +9,10 @@
 
     <TextView
         android:id="@+id/productPrice"
-        android:layout_width="136dp"
-        android:layout_height="47dp"
+        android:layout_width="133dp"
+        android:layout_height="49dp"
         android:layout_marginEnd="148dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="20dp"
         android:layout_weight="1"
         android:text="TextView"
         android:textSize="16sp"
@@ -38,15 +38,29 @@
     <TextView
         android:id="@+id/productTitle"
         android:layout_width="332dp"
-        android:layout_height="55dp"
+        android:layout_height="49dp"
         android:layout_marginEnd="308dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="20dp"
         android:layout_weight="1"
         android:text="TextView"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <ImageView
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toEndOf="@+id/productPrice"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

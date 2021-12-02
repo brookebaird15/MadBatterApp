@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.madbatterapp.Product;
 import com.example.madbatterapp.R;
+import com.example.madbatterapp.ShoppingCartCatalogue;
 
 import java.util.ArrayList;
 
@@ -38,10 +39,17 @@ public class CustomCartViewAdapter extends RecyclerView.Adapter<CustomCartViewAd
         Product currentItem = cartItems.get(position);
         holder.image.setImageResource(currentItem.getProductImg());
         holder.title.setText(context.getString(currentItem.getName()));
-        holder.price.setText(String.format("%.2f",currentItem.getPrice()));
-        }
+        holder.price.setText(String.format("%.2f", currentItem.getPrice()));
+        holder.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ShoppingCartCatalogue.getInstance().getCart().remove(ShoppingCartCatalogue.getInstance().getMenuOptions().get(position));
+                System.out.println("Delete clicked");
 
+            }
+        });
 
+    }
     @Override
     public int getItemCount() {
         if (cartItems != null) {
@@ -58,12 +66,14 @@ public class CustomCartViewAdapter extends RecyclerView.Adapter<CustomCartViewAd
         protected ImageView image;
         protected TextView title;
         protected TextView price;
+        protected ImageView button;
 
         public CustomCartHolder(@NonNull View itemView) {
             super(itemView);
             this.image = itemView.findViewById(R.id.productImg);
             this.title = itemView.findViewById(R.id.productTitle);
             this.price = itemView.findViewById(R.id.productPrice);
+            this.button = itemView.findViewById(R.id.deleteButton);
         }
     }
 }
