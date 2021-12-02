@@ -50,6 +50,10 @@ public class CustomCartViewAdapter extends RecyclerView.Adapter<CustomCartViewAd
         return 0;
     }
 
+    public Context getContext() {
+        return context;
+    }
+
     class CustomCartHolder extends RecyclerView.ViewHolder {
         protected ImageView image;
         protected TextView title;
