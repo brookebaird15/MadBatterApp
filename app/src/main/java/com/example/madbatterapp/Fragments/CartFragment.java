@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.madbatterapp.CartViewAdapter.CustomCartViewAdapter;
@@ -18,10 +19,11 @@ import com.example.madbatterapp.Product;
 import com.example.madbatterapp.R;
 import com.example.madbatterapp.ShoppingCartCatalogue;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CartFragment extends Fragment {
-
+    private ArrayList<Product> cartItems;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -37,8 +38,8 @@ public class CustomCartViewAdapter extends RecyclerView.Adapter<CustomCartViewAd
         Product currentItem = cartItems.get(position);
         holder.image.setImageResource(currentItem.getProductImg());
         holder.title.setText(context.getString(currentItem.getName()));
-        holder.price.setText(String.valueOf(currentItem.getPrice()));
-    }
+        holder.price.setText(String.format("%.2f",currentItem.getPrice()));
+        }
 
 
     @Override
