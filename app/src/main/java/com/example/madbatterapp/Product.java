@@ -1,5 +1,6 @@
 package com.example.madbatterapp;
 
+import android.content.Context;
 import android.graphics.drawable.Drawable;
 
 public class Product {
@@ -47,4 +48,9 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public String toString(Context context) {
+        return  context.getString(title) + " $" + price;
+    }
+
 }

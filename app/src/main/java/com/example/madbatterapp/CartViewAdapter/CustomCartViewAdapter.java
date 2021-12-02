@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.madbatterapp.Product;
 import com.example.madbatterapp.R;
+import com.example.madbatterapp.ShoppingCartCatalogue;
 
 import java.util.ArrayList;
 
@@ -40,6 +41,10 @@ public class CustomCartViewAdapter extends RecyclerView.Adapter<CustomCartViewAd
         holder.title.setText(context.getString(currentItem.getName()));
         holder.price.setText(String.format("%.2f",currentItem.getPrice()));
         }
+        //on button click, you're going to
+//    ShoppingCartCatalogue.getInstance().getCart().remove(ShoppingCartCatalogue.getInstance().getMenuOptions().get(position?)) <- What int needs to be called here??
+    //notifiyDataSetChanged()
+
 
 
     @Override
