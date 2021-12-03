@@ -31,12 +31,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<<<<<<< HEAD
+
     <!-- ABOUT FRAGMENT STRINGS -->
     <string name="about">Hi! My name is Allison and you may recognize me if you\'ve been to our store. I\'m the proud owner of
     the Mad Batter Bakery, which has been open for 5 years! I was 26 when I started this bakery and have always loved baking
     since I was a child. It\'s been a pleasure to share my passion and excitement with the community. So thank you, for
     letting me sharing my love with y\'all!</string>
+    <string name="crew">Rest of the Party</string>
+    <string name="member1">Hattie \n \n Head Baker and Co-owner</string>
+    <string name="member2">Cat \n \n Pastry Chef</string>
     <string name="faqtitle">FAQ\'s</string>
     <string name="aboutus">About Us</string>
     <string name="orderQuestion">How long will it take for you to complete my order?</string>
@@ -74,5 +77,4 @@
     <string name="rose_cake">Rose Cake</string>
     <string name="rose_description">A colourful vanilla buttercream frosted cake decorated to be look like roses.</string>
 
->>>>>>> development
 </resources>
