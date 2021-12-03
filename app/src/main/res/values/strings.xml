@@ -38,8 +38,8 @@
     since I was a child. It\'s been a pleasure to share my passion and excitement with the community. So thank you, for
     letting me sharing my love with y\'all!</string>
     <string name="crew">Rest of the Party</string>
-    <string name="member1">Hattie \n \n Head Baker and Co-owner</string>
-    <string name="member2">Cat \n \n Pastry Chef</string>
+    <string name="member1">Hattie \n Head Baker and Co-owner</string>
+    <string name="member2">Cat \n Pastry Chef</string>
     <string name="faqtitle">FAQ\'s</string>
     <string name="aboutus">About Us</string>
     <string name="orderQuestion">How long will it take for you to complete my order?</string>
@@ -51,7 +51,7 @@
     <string name="placeOrderQuestion">Can I place an order over the phone?</string>
     <string name="placeOrderAnswer">Due to accountability, we do not take orders over the phone. Please order via the app
     or our website!</string>
-=======
+
     <!-- CART FRAGMENT STRINGS -->
     <string name="Cart">Shopping Cart</string>
     <string name="Remove">Remove from Cart</string>
