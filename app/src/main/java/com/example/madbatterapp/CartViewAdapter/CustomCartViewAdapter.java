@@ -1,10 +1,10 @@
 package com.example.madbatterapp.CartViewAdapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,8 +18,8 @@ import com.example.madbatterapp.ShoppingCartCatalogue;
 import java.util.ArrayList;
 
 public class CustomCartViewAdapter extends RecyclerView.Adapter<CustomCartViewAdapter.CustomCartHolder> {
-    private ArrayList<Product> cartItems;
-    private Context context;
+    private final ArrayList<Product> cartItems;
+    private final Context context;
 
     public CustomCartViewAdapter(ArrayList<Product> cartItems, Context context) {
         this.cartItems = cartItems;
@@ -34,22 +34,19 @@ public class CustomCartViewAdapter extends RecyclerView.Adapter<CustomCartViewAd
         return new CustomCartHolder(view);
     }
 
+    @SuppressLint({"DefaultLocale", "NotifyDataSetChanged"})
     @Override
     public void onBindViewHolder(@NonNull CustomCartHolder holder, int position) {
         Product currentItem = cartItems.get(position);
         holder.image.setImageResource(currentItem.getProductImg());
         holder.title.setText(context.getString(currentItem.getName()));
         holder.price.setText(String.format("%.2f", currentItem.getPrice()));
-        holder.button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ShoppingCartCatalogue.getInstance().getCart().remove(ShoppingCartCatalogue.getInstance().getMenuOptions().get(position));
+        holder.button.setOnClickListener(view -> {
+            ShoppingCartCatalogue.getInstance().getCart().remove(ShoppingCartCatalogue.getInstance().getMenuOptions().get(holder.getAbsoluteAdapterPosition()));
 //                System.out.println("Delete clicked");
-                notifyDataSetChanged();
+            notifyDataSetChanged();
 
-        }
-
-            });
+    });
     }
     @Override
     public int getItemCount() {
@@ -63,7 +60,7 @@ public class CustomCartViewAdapter extends RecyclerView.Adapter<CustomCartViewAd
         return context;
     }
 
-    class CustomCartHolder extends RecyclerView.ViewHolder {
+    static class CustomCartHolder extends RecyclerView.ViewHolder {
         protected ImageView image;
         protected TextView title;
         protected TextView price;
