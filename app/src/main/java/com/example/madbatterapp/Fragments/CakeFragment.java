@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.madbatterapp.CakeViewAdapter.CustomCakeViewAdapter;
-import com.example.madbatterapp.Product;
+import com.example.madbatterapp.Pojo.Product;
 import com.example.madbatterapp.ShoppingCartCatalogue;
 import com.example.madbatterapp.R;
 

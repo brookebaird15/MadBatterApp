@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.madbatterapp.Pojo.FAQItem;
 import com.example.madbatterapp.R;
 
 import org.w3c.dom.Text;
@@ -18,7 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomFAQAdapter extends ArrayAdapter<FAQItem> {
-    public CustomFAQAdapter(@NonNull Context context, @NonNull ArrayList<FAQItem> items) {
+
+    public CustomFAQAdapter(@NonNull Context context, ArrayList<FAQItem> items) {
         super(context, 0, items);
     }
 
@@ -35,13 +37,12 @@ public class CustomFAQAdapter extends ArrayAdapter<FAQItem> {
         answer.setText(getItem(position).getAnswer());
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
-            /**
-             * Set it so when the view is clicked, the answer is revealed
-             */
             public void onClick(View view) {
                 answer.setVisibility(View.VISIBLE);
             }
         });
+
         return convertView;
     }
 }
+

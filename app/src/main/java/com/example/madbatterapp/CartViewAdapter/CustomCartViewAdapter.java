@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.madbatterapp.Product;
+import com.example.madbatterapp.Pojo.Product;
 import com.example.madbatterapp.R;
 import com.example.madbatterapp.ShoppingCartCatalogue;
 

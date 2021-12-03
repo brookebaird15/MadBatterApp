@@ -1,4 +1,4 @@
-package com.example.madbatterapp;
+package com.example.madbatterapp.Pojo;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
