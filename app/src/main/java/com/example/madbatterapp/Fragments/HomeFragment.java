@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.madbatterapp.HomeViewAdapter.CustomCategoryViewAdapter;
-import com.example.madbatterapp.HomeViewAdapter.POJOS.CategoryItem;
+import com.example.madbatterapp.HomeViewAdapter.CategoryItem;
 import com.example.madbatterapp.R;
 
 import java.util.ArrayList;
