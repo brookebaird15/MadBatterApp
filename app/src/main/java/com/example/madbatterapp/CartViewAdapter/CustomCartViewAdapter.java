@@ -44,11 +44,12 @@ public class CustomCartViewAdapter extends RecyclerView.Adapter<CustomCartViewAd
             @Override
             public void onClick(View view) {
                 ShoppingCartCatalogue.getInstance().getCart().remove(ShoppingCartCatalogue.getInstance().getMenuOptions().get(position));
-                System.out.println("Delete clicked");
+//                System.out.println("Delete clicked");
+                notifyDataSetChanged();
 
-            }
-        });
+        }
 
+            });
     }
     @Override
     public int getItemCount() {
