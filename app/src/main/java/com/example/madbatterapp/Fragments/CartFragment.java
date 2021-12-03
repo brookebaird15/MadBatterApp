@@ -48,7 +48,7 @@ public class CartFragment extends Fragment {
                     }
                     Intent i = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"));
                     i.putExtra(Intent.EXTRA_EMAIL, emailAddress);
-                    i.putExtra(Intent.EXTRA_TEXT, "I am ordering " + sb.toString() + "from your bakery.");
+                    i.putExtra(Intent.EXTRA_TEXT, "I am ordering " + sb.toString() + "from your bakery. Please notify me when order is ready.");
                     startActivity(i);
                 } else {
                     Snackbar.make(view, "Your cart is empty! Please add to the cart.", Snackbar.LENGTH_LONG)

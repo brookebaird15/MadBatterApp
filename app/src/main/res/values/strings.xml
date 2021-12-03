@@ -31,7 +31,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<<<<<<< HEAD
     <!-- ABOUT FRAGMENT STRINGS -->
     <string name="about">Hi! My name is Allison and you may recognize me if you\'ve been to our store. I\'m the proud owner of
     the Mad Batter Bakery, which has been open for 5 years! I was 26 when I started this bakery and have always loved baking
@@ -48,7 +47,7 @@
     <string name="placeOrderQuestion">Can I place an order over the phone?</string>
     <string name="placeOrderAnswer">Due to accountability, we do not take orders over the phone. Please order via the app
     or our website!</string>
-=======
+
     <!-- CART FRAGMENT STRINGS -->
     <string name="Cart">Shopping Cart</string>
     <string name="Remove">Remove from Cart</string>
@@ -73,6 +72,4 @@
     <string name="fun_description">A fluffy white cake with sprinkles used inside the cake AND outside!</string>
     <string name="rose_cake">Rose Cake</string>
     <string name="rose_description">A colourful vanilla buttercream frosted cake decorated to be look like roses.</string>
-
->>>>>>> development
 </resources>
