@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.madbatterapp.CakeViewAdapter.CustomCakeViewAdapter;
+import com.example.madbatterapp.ProductsViewAdapter.CustomCakeViewAdapter;
 import com.example.madbatterapp.R;
 import com.example.madbatterapp.ShoppingCartCatalogue;
 

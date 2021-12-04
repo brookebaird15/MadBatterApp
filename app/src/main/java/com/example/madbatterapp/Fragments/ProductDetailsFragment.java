@@ -87,6 +87,7 @@ public class ProductDetailsFragment extends Fragment {
                 }
             }
         });
+        MainActivity.fab.hide();
 
         extras = getArguments();
         if (extras != null){
