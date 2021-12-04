@@ -28,7 +28,11 @@
         android:id="@+id/nav_brownies"
         android:name="com.example.madbatterapp.Fragments.BrownieFragment"
         android:label="Brownies"
-        tools:layout="@layout/fragment_brownie" />
+        tools:layout="@layout/fragment_brownie" >
+        <action
+            android:id="@+id/action_nav_brownies_to_nav_product_details"
+            app:destination="@id/nav_product_details" />
+    </fragment>
     <fragment
         android:id="@+id/nav_cake"
         android:name="com.example.madbatterapp.Fragments.CakeFragment"
