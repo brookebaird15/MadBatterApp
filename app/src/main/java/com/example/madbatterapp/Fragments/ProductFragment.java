@@ -9,11 +9,11 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.madbatterapp.CakeViewAdapter.CustomCakeViewAdapter;
+import com.example.madbatterapp.ProductViewAdapter.ProductViewAdapter;
 import com.example.madbatterapp.R;
 import com.example.madbatterapp.ShoppingCartCatalogue;
 
-public class CakeFragment extends Fragment {
+public class ProductFragment extends Fragment {
 
 
     @Override
@@ -33,7 +33,7 @@ public class CakeFragment extends Fragment {
             recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1));
 
         }
-        recyclerView.setAdapter(new CustomCakeViewAdapter(ShoppingCartCatalogue.getInstance().getMenuOptions()));
+        recyclerView.setAdapter(new ProductViewAdapter(ShoppingCartCatalogue.getInstance().getMenuOptions()));
         return view;
     }
 }

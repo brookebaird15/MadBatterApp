@@ -21,8 +21,8 @@
         tools:layout="@layout/fragment_credits" />
     <fragment
         android:id="@+id/nav_product"
-        android:name="com.example.madbatterapp.Fragments.CakeFragment"
-        android:label="Bakery Product"
+        android:name="com.example.madbatterapp.Fragments.ProductFragment"
+        android:label="Bakery Menu"
         tools:layout="@layout/fragment_cake">
         <action
             android:id="@+id/action_nav_cake_to_product_details_fragment"
