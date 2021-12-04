@@ -1,25 +1,20 @@
 package com.example.madbatterapp.Fragments;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import com.example.madbatterapp.CakeViewAdapter.CustomCakeViewAdapter;
-import com.example.madbatterapp.Product;
-import com.example.madbatterapp.ShoppingCartCatalogue;
+import com.example.madbatterapp.ProductViewAdapter.CustomCakeViewAdapter;
 import com.example.madbatterapp.R;
-
-import java.util.List;
+import com.example.madbatterapp.ShoppingCartCatalogue;
 
 public class CakeFragment extends Fragment {
 
-    private List<Product> productList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

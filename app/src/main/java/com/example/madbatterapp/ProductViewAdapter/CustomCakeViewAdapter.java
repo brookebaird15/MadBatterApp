@@ -1,4 +1,4 @@
-package com.example.madbatterapp.CakeViewAdapter;
+package com.example.madbatterapp.ProductViewAdapter;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -18,10 +18,10 @@ import java.util.ArrayList;
 
 public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeViewAdapter.CustomCakeHolder> {
 
-    private ArrayList<Product> cakeItems;
+    private ArrayList<Product> products;
 
     public CustomCakeViewAdapter(ArrayList<Product> cakeItems){
-        this.cakeItems = cakeItems;}
+        this.products = cakeItems;}
 
 
     @NonNull
@@ -33,7 +33,7 @@ public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeViewAd
 
     @Override
     public void onBindViewHolder(@NonNull CustomCakeHolder holder,  int position) {
-        Product currentItem = cakeItems.get(position);
+        Product currentItem = products.get(position);
         holder.image.setImageResource(currentItem.getProductImg());
         holder.name.setText(currentItem.getName());
         holder.description.setText(currentItem.getDescription());
@@ -41,8 +41,8 @@ public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeViewAd
 
     @Override
     public int getItemCount() {
-        if (cakeItems != null){
-            return cakeItems.size();
+        if (products != null){
+            return products.size();
         }
         return 0;
     }
@@ -61,7 +61,7 @@ public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeViewAd
 
         @Override
         public void onClick(View view) {
-            Product currentItem = cakeItems.get(getAbsoluteAdapterPosition());
+            Product currentItem = products.get(getAbsoluteAdapterPosition());
             Bundle bundle = new Bundle();
             bundle.putInt("NAME", ((currentItem.getName())));
             bundle.putInt("IMAGE", currentItem.getProductImg());
