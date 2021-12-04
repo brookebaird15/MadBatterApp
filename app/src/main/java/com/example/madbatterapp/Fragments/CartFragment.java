@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.madbatterapp.CartViewAdapter.CustomCartViewAdapter;
 import com.example.madbatterapp.MainActivity;
-import com.example.madbatterapp.Product;
+import com.example.madbatterapp.Pojo.Product;
 import com.example.madbatterapp.R;
 import com.example.madbatterapp.ShoppingCartCatalogue;
 import com.google.android.material.snackbar.Snackbar;

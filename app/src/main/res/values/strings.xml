@@ -24,6 +24,7 @@
     <string name="menu_brownies">Brownies</string>
     <string name="menu_cake">Cakes</string>
     <string name="menu_aboutus">About Us</string>
+    <string name="menu_faq">FAQ</string>
     <string name="menu_cart">My Cart</string>
 
     <!-- HOME FRAGMENT STRINGS -->
@@ -40,7 +41,9 @@
     <string name="crew">Rest of the Party</string>
     <string name="member1">Hattie \n Head Baker and Co-owner</string>
     <string name="member2">Cat \n Pastry Chef</string>
-    <string name="faqtitle">FAQ\'s</string>
+
+    <!-- FAQ FRAGMENT STRINGS-->
+    <string name="faqtitle">Frequently Asked Questions</string>
     <string name="aboutus">About Us</string>
     <string name="orderQuestion">How long will it take for you to complete my order?</string>
     <string name="orderAnswer">It takes between 24 to 72 hours for an order to be completed. Once completed, you\'ll be notified via email</string>
@@ -49,7 +52,7 @@
     <string name="requestQuestion">If I order a cake, can I get writing on it?</string>
     <string name="requestAnswer">You sure can! Just let me know in the email upon checkout</string>
     <string name="placeOrderQuestion">Can I place an order over the phone?</string>
-    <string name="placeOrderAnswer">Due to accountability, we do not take orders over the phone. Please order via the app
+    <string name="placeOrderAnswer"> Due to accountability, we do not take orders over the phone. Please order via the app
     or our website!</string>
 
     <!-- CART FRAGMENT STRINGS -->

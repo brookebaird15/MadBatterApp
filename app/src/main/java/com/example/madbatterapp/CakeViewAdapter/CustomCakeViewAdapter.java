@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.madbatterapp.Product;
+import com.example.madbatterapp.Pojo.Product;
 import com.example.madbatterapp.R;
 
 import java.util.ArrayList;

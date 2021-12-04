@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppCacheMetadata>
+  <AppCacheManifest
+    MasterUrl="https://%DOMAIN%/AS/API/WindowsCortanaPane/V2/Init"
+    Url="https://%DOMAIN%/manifest/threshold.appcache"
+    Filename="1.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;Content-Length:1577&#xA;Cache-Control:private&#xA;Content-Type:text/cache-manifest; charset=utf-8&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/AS/API/WindowsCortanaPane/V2/Init"
+    Filename="2.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-UA-Compatible:IE=edge&#xA;X-XSS-Protection:0&#xA;Content-Length:73622&#xA;Cache-Control:private&#xA;Content-Type:text/html; charset=utf-8&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rb/14/cj,nj/cc1598a3/b6683755.js?bu=DisYZGp1cGdfba8BogEYlQEY"
+    Filename="3.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:19053&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:39:29 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rb/16/cir2,ortl,cc,nc/a64e3893/9630dd4c.css?bu=CaYEpQKfAoQFhwSDBIoDTEw"
+    Filename="4.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:20397&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:text/css; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:39:48 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rb/16/cir2,ortl,cc,nc/f25b19f0/64f646e9.css?bu=BkwzwwFTTEw"
+    Filename="5.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_MISS&#xA;Content-Length:1313&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:text/css; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:39:14 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rb/2u/cj,nj/6cad2cfb/d4857707.js?bu=C98B2gLIAssCrQKvAtAC4QHeAukCsgI"
+    Filename="6.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:37178&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:41:49 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rb/2u/cj,nj/c99da3b5/68cf2f48.js?bu=A_IBrQL6AQ"
+    Filename="7.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:168670&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:41:49 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rb/5f/cj,nj/8e33fd9e/b91db3d9.js?bu=GtUf_B-cH6cf_ASyH7Uftx-8H8Yf5x_rH_Af-wr5H5sg5R3oHdQenSCRIPwE1xzeH4YL7Ao"
+    Filename="8.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:50940&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:43:34 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rb/6s/cir2,ortl,cc,nc/f9115eda/03a19dea.css?bu=CtgE0gTvBM4E5QThBM4EzgSRBekE"
+    Filename="9.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_MISS&#xA;Content-Length:68721&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:text/css; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:40:26 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rb/6s/cj,nj/3026b4da/57599825.js?bu=FtsDzwLRAtUC0wK-ArsCoQLzAfABmgLCAsUCc3OYAv4BuQSxBP8C3gPNAg"
+    Filename="10.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_MISS&#xA;Content-Length:201824&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:40:30 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rb/6s/cj,nj/3ab82731/ecf1186a.js?bu=B94C9QL3AnNzc3M"
+    Filename="11.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_MISS&#xA;Content-Length:34240&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:40:30 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rb/6s/cj,nj/3ecdf5b4/534a19ce.js?bu=HIUCpAGAAqsC-gGJAowCrQKzAq8CsQKmAagB5QHnAbYCkgLqAZwCowKlAtgCuAL8AfsC-QLeAXM"
+    Filename="12.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:226775&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:42:36 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rb/6s/cj,nj/6601cb18/894f5f48.js?bu=HuAD4gP4A_YDjwSNBIUE_gPyA-4D8AP0A-wD6gORBJME6APkA-YD-gP8A4gEc3OfBHODBHNzpgQ"
+    Filename="13.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_MISS&#xA;Content-Length:53455&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:42:47 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/2u/2B/ortl,cc,nc/3d94d67e/0ebce192.css"
+    Filename="14.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:7723&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:text/css; charset=utf-8&#xA;Last-Modified:Fri, 11 Oct 2019 23:47:43 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/2w/6/cj,nj/7a731726/c679c8b2.js"
+    Filename="15.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:122967&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Wed, 16 Oct 2019 18:14:31 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/5b/R/nj/8fe7be63/8636b4dd.js"
+    Filename="16.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:94820&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Wed, 16 Oct 2019 18:17:28 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/5b/r/nj/d9799f53/045d3532.js"
+    Filename="17.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:6584&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Wed, 16 Oct 2019 18:17:28 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/5O/L/cj,nj/7e516373/53c747e0.js"
+    Filename="18.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:121754&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:43:57 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/6B/fM/nj/8d7596fb/665f5f09.js"
+    Filename="19.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:121212&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Mon, 18 Mar 2019 14:37:27 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/6g/Cn/ortl,cc,nc/b8df1892/11c64b7d.css"
+    Filename="20.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:65490&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:text/css; charset=utf-8&#xA;Last-Modified:Wed, 16 Oct 2019 18:14:27 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/6s/37/cj,nj/d306c014/359d2aee.js"
+    Filename="21.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:45513&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Wed, 16 Oct 2019 18:15:05 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/6s/3m/cj,nj/0b1a1c19/dbef2181.js"
+    Filename="22.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:202240&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Wed, 16 Oct 2019 18:15:05 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/6s/4a/cj,nj/f5b71820/cca0c2d7.js"
+    Filename="23.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:15912&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Wed, 16 Oct 2019 09:09:46 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/6s/4D/cj,nj/a2d446a8/862e44c0.js"
+    Filename="24.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:48870&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Wed, 16 Oct 2019 09:09:46 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/6s/4N/cj,nj/200aef8c/483b5ee0.js"
+    Filename="25.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:40043&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:43:51 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/6u/6/cj,nj/e36b295b/a6a65752.js"
+    Filename="26.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:799276&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Wed, 16 Oct 2019 18:18:10 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/6u/6d/cj,nj/075f4af5/69bd4e13.js"
+    Filename="27.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_MISS&#xA;Content-Length:88861&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Thu, 17 Oct 2019 13:42:58 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/6u/a/cj,nj/b12257fe/22366219.js"
+    Filename="28.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:185779&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Wed, 16 Oct 2019 18:18:10 GMT&#xA;&#xA;" />
+  <AppCacheFile
+    Url="https://%DOMAIN%/rs/z/g/cj,nj/92ab0027/0c3a2f0b.js"
+    Filename="29.txt"
+    ResponseHeaders="HTTP/1.1 200 OK&#xA;X-Cache:TCP_HIT&#xA;Content-Length:17445&#xA;Cache-Control:public, max-age=15552000&#xA;Content-Type:application/x-javascript; charset=utf-8&#xA;Last-Modified:Wed, 16 Oct 2019 18:13:39 GMT&#xA;&#xA;" />
+</AppCacheMetadata>
