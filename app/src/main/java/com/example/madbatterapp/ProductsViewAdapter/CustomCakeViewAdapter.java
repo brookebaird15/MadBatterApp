@@ -1,5 +1,4 @@
-package com.example.madbatterapp.ProductViewAdapter;
-
+package com.example.madbatterapp.ProductsViewAdapter;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,28 +10,27 @@ import androidx.annotation.NonNull;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.madbatterapp.Product;
+import com.example.madbatterapp.Pojo.Product;
 import com.example.madbatterapp.R;
 
 import java.util.ArrayList;
 
-public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeViewAdapter.CustomCakeHolder> {
+class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomRecyclerViewAdapter.CustomProductHolder> {
 
     private ArrayList<Product> products;
 
-    public CustomCakeViewAdapter(ArrayList<Product> cakeItems){
-        this.products = cakeItems;}
-
+    public CustomRecyclerViewAdapter(ArrayList<Product> items){
+        this.products = items;}
 
     @NonNull
     @Override
-    public CustomCakeHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CustomProductHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_cake_card, parent, false);
-        return new CustomCakeHolder(view);
+        return new CustomProductHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CustomCakeHolder holder,  int position) {
+    public void onBindViewHolder(@NonNull CustomProductHolder holder,  int position) {
         Product currentItem = products.get(position);
         holder.image.setImageResource(currentItem.getProductImg());
         holder.name.setText(currentItem.getName());
@@ -46,12 +44,12 @@ public class CustomCakeViewAdapter extends RecyclerView.Adapter<CustomCakeViewAd
         }
         return 0;
     }
-    class CustomCakeHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    class CustomProductHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         protected ImageView image;
         protected TextView name;
         protected TextView description;
 
-        public CustomCakeHolder(@NonNull View itemView) {
+        public CustomProductHolder(@NonNull View itemView) {
             super(itemView);
             this.image = itemView.findViewById(R.id.cakeImg);
             this.name = itemView.findViewById(R.id.name);

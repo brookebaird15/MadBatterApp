@@ -1,4 +1,4 @@
-package com.example.madbatterapp.AboutFAQListview;
+package com.example.madbatterapp.Pojo;
 
 public class FAQItem {
     private String question;
@@ -13,7 +13,16 @@ public class FAQItem {
         return question;
     }
 
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
     public String getAnswer() {
         return answer;
     }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
+    }
 }
+

@@ -3,25 +3,25 @@ package com.example.madbatterapp.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
-import com.example.madbatterapp.HomeViewAdapter.CustomCategoryViewAdapter;
-import com.example.madbatterapp.HomeViewAdapter.CategoryItem;
+import com.example.madbatterapp.AboutFAQListview.CustomFAQAdapter;
+import com.example.madbatterapp.Pojo.FAQItem;
 import com.example.madbatterapp.R;
 
 import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link HomeFragment#newInstance} factory method to
+ * Use the {@link FAQFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class HomeFragment extends Fragment {
+public class FAQFragment extends Fragment {
+    ListView listView;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -32,7 +32,7 @@ public class HomeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public HomeFragment() {
+    public FAQFragment() {
         // Required empty public constructor
     }
 
@@ -42,11 +42,11 @@ public class HomeFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Home.
+     * @return A new instance of fragment FAQFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static HomeFragment newInstance(String param1, String param2) {
-        HomeFragment fragment = new HomeFragment();
+    public static FAQFragment newInstance(String param1, String param2) {
+        FAQFragment fragment = new FAQFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -67,19 +67,14 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
-        ArrayList<CategoryItem> categoryItems = new ArrayList<>();
-        categoryItems.add(new CategoryItem(R.drawable.cakebtnimg));
-        categoryItems.add(new CategoryItem(R.drawable.browniebtnimg));
-        categoryItems.add(new CategoryItem(R.drawable.cookiesbtnimg));
-        categoryItems.add(new CategoryItem(R.drawable.recipebtnimg));
-        categoryItems.add(new CategoryItem(R.drawable.aboutbtnimg));
-        categoryItems.add(new CategoryItem(R.drawable.creditsbtnimg));
-
-
-        RecyclerView recyclerView = view.findViewById(R.id.categoriesRecyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
-        recyclerView.setAdapter(new CustomCategoryViewAdapter(categoryItems));
+        View view = inflater.inflate(R.layout.fragment_f_a_q, container, false);
+        listView = view.findViewById(R.id.faqList);
+        ArrayList<FAQItem> faqItemArrayList = new ArrayList<>();
+        faqItemArrayList.add(new FAQItem(getString(R.string.orderQuestion), getString(R.string.orderAnswer)));
+        faqItemArrayList.add(new FAQItem(getString(R.string.hoursQuestion), getString(R.string.hoursAnswer)));
+        faqItemArrayList.add(new FAQItem(getString(R.string.requestQuestion), getString(R.string.requestAnswer)));
+        faqItemArrayList.add(new FAQItem(getString(R.string.placeOrderQuestion), getString(R.string.placeOrderAnswer)));
+        listView.setAdapter(new CustomFAQAdapter(getContext(), faqItemArrayList));
         return view;
     }
 }
