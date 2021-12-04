@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.madbatterapp.Pojo.Product;
 import com.example.madbatterapp.R;
 import com.example.madbatterapp.ShoppingCartCatalogue;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
@@ -43,7 +44,9 @@ public class CustomCartViewAdapter extends RecyclerView.Adapter<CustomCartViewAd
         holder.price.setText(String.format("%.2f", currentItem.getPrice()));
         holder.button.setOnClickListener(view -> {
             ShoppingCartCatalogue.getInstance().getCart().remove(ShoppingCartCatalogue.getInstance().getMenuOptions().get(holder.getAbsoluteAdapterPosition()));
-//                System.out.println("Delete clicked");
+            Snackbar.make(view, "Item deleted", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
+            cartItems.remove(currentItem);
             notifyDataSetChanged();
 
     });
