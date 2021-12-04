@@ -46,6 +46,7 @@ public class CustomCartViewAdapter extends RecyclerView.Adapter<CustomCartViewAd
             ShoppingCartCatalogue.getInstance().getCart().remove(ShoppingCartCatalogue.getInstance().getMenuOptions().get(holder.getAbsoluteAdapterPosition()));
             Snackbar.make(view, "Item deleted", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
+            cartItems.remove(currentItem);
             notifyDataSetChanged();
 
     });
