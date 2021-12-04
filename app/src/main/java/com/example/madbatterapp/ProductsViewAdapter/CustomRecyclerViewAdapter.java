@@ -1,6 +1,5 @@
 package com.example.madbatterapp.ProductsViewAdapter;
 
-package com.example.madbatterapp.ProductsViewAdapter;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +16,7 @@ import com.example.madbatterapp.R;
 
 import java.util.ArrayList;
 
-public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<com.example.madbatterapp.ProductsViewAdapter.CustomRecyclerViewAdapter.CustomProductHolder> {
+public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomRecyclerViewAdapter.CustomProductHolder> {
 
     private ArrayList<Product> products;
 
@@ -26,7 +25,7 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<com.example.
 
     @NonNull
     @Override
-    public com.example.madbatterapp.ProductsViewAdapter.CustomRecyclerViewAdapter.CustomProductHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CustomProductHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_cake_card, parent, false);
         return new com.example.madbatterapp.ProductsViewAdapter.CustomRecyclerViewAdapter.CustomProductHolder(view);
     }
