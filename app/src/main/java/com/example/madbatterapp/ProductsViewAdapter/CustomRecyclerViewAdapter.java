@@ -1,4 +1,6 @@
 package com.example.madbatterapp.ProductsViewAdapter;
+
+package com.example.madbatterapp.ProductsViewAdapter;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +17,7 @@ import com.example.madbatterapp.R;
 
 import java.util.ArrayList;
 
-class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomRecyclerViewAdapter.CustomProductHolder> {
+public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<com.example.madbatterapp.ProductsViewAdapter.CustomRecyclerViewAdapter.CustomProductHolder> {
 
     private ArrayList<Product> products;
 
@@ -24,13 +26,13 @@ class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomRecyclerViewA
 
     @NonNull
     @Override
-    public CustomProductHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public com.example.madbatterapp.ProductsViewAdapter.CustomRecyclerViewAdapter.CustomProductHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_cake_card, parent, false);
-        return new CustomProductHolder(view);
+        return new com.example.madbatterapp.ProductsViewAdapter.CustomRecyclerViewAdapter.CustomProductHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CustomProductHolder holder,  int position) {
+    public void onBindViewHolder(@NonNull com.example.madbatterapp.ProductsViewAdapter.CustomRecyclerViewAdapter.CustomProductHolder holder, int position) {
         Product currentItem = products.get(position);
         holder.image.setImageResource(currentItem.getProductImg());
         holder.name.setText(currentItem.getName());
@@ -71,5 +73,7 @@ class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomRecyclerViewA
         }
     }
 }
+
+
 
 
