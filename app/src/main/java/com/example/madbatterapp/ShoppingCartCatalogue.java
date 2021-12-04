@@ -1,5 +1,7 @@
 package com.example.madbatterapp;
 
+import com.example.madbatterapp.Pojo.Product;
+
 import java.util.ArrayList;
 
 public class ShoppingCartCatalogue {

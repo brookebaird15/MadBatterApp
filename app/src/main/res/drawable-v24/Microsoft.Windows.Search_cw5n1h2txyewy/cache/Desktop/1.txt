@@ -1,0 +1,33 @@
+﻿CACHE MANIFEST
+# Version:2896e6a3
+CACHE:
+/AS/API/WindowsCortanaPane/V2/Init
+/rb/14/cj,nj/cc1598a3/b6683755.js?bu=DisYZGp1cGdfba8BogEYlQEY
+/rb/16/cir2,ortl,cc,nc/a64e3893/9630dd4c.css?bu=CaYEpQKfAoQFhwSDBIoDTEw
+/rb/16/cir2,ortl,cc,nc/f25b19f0/64f646e9.css?bu=BkwzwwFTTEw
+/rb/2u/cj,nj/6cad2cfb/d4857707.js?bu=C98B2gLIAssCrQKvAtAC4QHeAukCsgI
+/rb/2u/cj,nj/c99da3b5/68cf2f48.js?bu=A_IBrQL6AQ
+/rb/5f/cj,nj/8e33fd9e/b91db3d9.js?bu=GtUf_B-cH6cf_ASyH7Uftx-8H8Yf5x_rH_Af-wr5H5sg5R3oHdQenSCRIPwE1xzeH4YL7Ao
+/rb/6s/cir2,ortl,cc,nc/f9115eda/03a19dea.css?bu=CtgE0gTvBM4E5QThBM4EzgSRBekE
+/rb/6s/cj,nj/3026b4da/57599825.js?bu=FtsDzwLRAtUC0wK-ArsCoQLzAfABmgLCAsUCc3OYAv4BuQSxBP8C3gPNAg
+/rb/6s/cj,nj/3ab82731/ecf1186a.js?bu=B94C9QL3AnNzc3M
+/rb/6s/cj,nj/3ecdf5b4/534a19ce.js?bu=HIUCpAGAAqsC-gGJAowCrQKzAq8CsQKmAagB5QHnAbYCkgLqAZwCowKlAtgCuAL8AfsC-QLeAXM
+/rb/6s/cj,nj/6601cb18/894f5f48.js?bu=HuAD4gP4A_YDjwSNBIUE_gPyA-4D8AP0A-wD6gORBJME6APkA-YD-gP8A4gEc3OfBHODBHNzpgQ
+/rs/2u/2B/ortl,cc,nc/3d94d67e/0ebce192.css
+/rs/2w/6/cj,nj/7a731726/c679c8b2.js
+/rs/5b/R/nj/8fe7be63/8636b4dd.js
+/rs/5b/r/nj/d9799f53/045d3532.js
+/rs/5O/L/cj,nj/7e516373/53c747e0.js
+/rs/6B/fM/nj/8d7596fb/665f5f09.js
+/rs/6g/Cn/ortl,cc,nc/b8df1892/11c64b7d.css
+/rs/6s/37/cj,nj/d306c014/359d2aee.js
+/rs/6s/3m/cj,nj/0b1a1c19/dbef2181.js
+/rs/6s/4a/cj,nj/f5b71820/cca0c2d7.js
+/rs/6s/4D/cj,nj/a2d446a8/862e44c0.js
+/rs/6s/4N/cj,nj/200aef8c/483b5ee0.js
+/rs/6u/6/cj,nj/e36b295b/a6a65752.js
+/rs/6u/6d/cj,nj/075f4af5/69bd4e13.js
+/rs/6u/a/cj,nj/b12257fe/22366219.js
+/rs/z/g/cj,nj/92ab0027/0c3a2f0b.js
+NETWORK:
+*
