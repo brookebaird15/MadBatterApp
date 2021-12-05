@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/nav_cake">
+    app:startDestination="@id/nav_product">
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.madbatterapp.Fragments.HomeFragment"
@@ -20,20 +20,10 @@
         android:label="Credits"
         tools:layout="@layout/fragment_credits" />
     <fragment
-        android:id="@+id/nav_cookies"
-        android:name="com.example.madbatterapp.Fragments.CookieFragment"
-        android:label="Cookies"
-        tools:layout="@layout/fragment_cookie" />
-    <fragment
-        android:id="@+id/nav_brownies"
-        android:name="com.example.madbatterapp.Fragments.BrowieFragment"
-        android:label="Brownies"
-        tools:layout="@layout/fragment_browie" />
-    <fragment
-        android:id="@+id/nav_cake"
-        android:name="com.example.madbatterapp.Fragments.CakeFragment"
-        android:label="Cakes"
-        tools:layout="@layout/fragment_cake" >
+        android:id="@+id/nav_product"
+        android:name="com.example.madbatterapp.Fragments.ProductFragment"
+        android:label="Bakery Menu"
+        tools:layout="@layout/fragment_product">
         <action
             android:id="@+id/action_nav_cake_to_product_details_fragment"
             app:destination="@id/nav_product_details" />
