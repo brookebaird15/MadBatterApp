@@ -23,7 +23,7 @@
         android:id="@+id/nav_product"
         android:name="com.example.madbatterapp.Fragments.ProductFragment"
         android:label="Bakery Menu"
-        tools:layout="@layout/fragment_cake">
+        tools:layout="@layout/fragment_product">
         <action
             android:id="@+id/action_nav_cake_to_product_details_fragment"
             app:destination="@id/nav_product_details" />

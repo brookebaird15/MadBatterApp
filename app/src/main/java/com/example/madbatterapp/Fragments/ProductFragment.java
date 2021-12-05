@@ -20,16 +20,16 @@ public class ProductFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_cake, container, false);
+        View view = inflater.inflate(R.layout.fragment_product, container, false);
 
         //Use either one adapter or the other depending on the screen width
-        RecyclerView recyclerView = view.findViewById(R.id.largeCakeRecyclerView);
+        RecyclerView recyclerView = view.findViewById(R.id.largeProductRecyclerView);
         if (recyclerView != null) {
             //Large Screen
             recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
         } else {
             //small screen
-            recyclerView = view.findViewById(R.id.cakeRecyclerView);
+            recyclerView = view.findViewById(R.id.productRecyclerView);
             recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1));
 
         }
