@@ -85,9 +85,11 @@ public class ProductDetailsFragment extends Fragment {
                     Snackbar.make(view, "Item added", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
                 }
+                MainActivity.fab.hide();
             }
+
         });
-        MainActivity.fab.hide();
+
 
         extras = getArguments();
         if (extras != null){

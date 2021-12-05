@@ -1,4 +1,4 @@
-package com.example.madbatterapp.ProductsViewAdapter;
+package com.example.madbatterapp.ProductViewAdapter;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,24 +16,24 @@ import com.example.madbatterapp.R;
 
 import java.util.ArrayList;
 
-class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomRecyclerViewAdapter.CustomProductHolder> {
+public class ProductViewAdapter extends RecyclerView.Adapter<ProductViewAdapter.ProductHolder> {
 
-    private ArrayList<Product> products;
+    private ArrayList<Product> items;
 
-    public CustomRecyclerViewAdapter(ArrayList<Product> items){
-        this.products = items;}
+    public ProductViewAdapter(ArrayList<Product> cakeItems){
+        this.items = cakeItems;}
 
 
     @NonNull
     @Override
-    public CustomProductHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ProductHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_cake_card, parent, false);
-        return new CustomProductHolder(view);
+        return new ProductHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CustomProductHolder holder,  int position) {
-        Product currentItem = products.get(position);
+    public void onBindViewHolder(@NonNull ProductHolder holder,  int position) {
+        Product currentItem = items.get(position);
         holder.image.setImageResource(currentItem.getProductImg());
         holder.name.setText(currentItem.getName());
         holder.description.setText(currentItem.getDescription());
@@ -41,17 +41,17 @@ class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomRecyclerViewA
 
     @Override
     public int getItemCount() {
-        if (products != null){
-            return products.size();
+        if (items != null){
+            return items.size();
         }
         return 0;
     }
-    class CustomProductHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    class ProductHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         protected ImageView image;
         protected TextView name;
         protected TextView description;
 
-        public CustomProductHolder(@NonNull View itemView) {
+        public ProductHolder(@NonNull View itemView) {
             super(itemView);
             this.image = itemView.findViewById(R.id.cakeImg);
             this.name = itemView.findViewById(R.id.name);
@@ -61,7 +61,7 @@ class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomRecyclerViewA
 
         @Override
         public void onClick(View view) {
-            Product currentItem = products.get(getAbsoluteAdapterPosition());
+            Product currentItem = items.get(getAbsoluteAdapterPosition());
             Bundle bundle = new Bundle();
             bundle.putInt("NAME", ((currentItem.getName())));
             bundle.putInt("IMAGE", currentItem.getProductImg());
