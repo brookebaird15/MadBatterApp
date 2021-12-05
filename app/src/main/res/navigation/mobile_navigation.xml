@@ -58,4 +58,9 @@
         android:name="com.example.madbatterapp.Fragments.FAQFragment"
         android:label="FAQ"
         tools:layout="@layout/fragment_f_a_q" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.madbatterapp.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" />
 </navigation>
