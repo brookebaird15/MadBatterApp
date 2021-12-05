@@ -19,6 +19,7 @@ public class ShoppingCartCatalogue {
         menuOptions.add(new Product(R.drawable.vanillacake,R.string.vanilla_cake, R.string.vanilla_description, 30.00));
         menuOptions.add(new Product(R.drawable.funfetticake,R.string.fun_cake, R.string.fun_description, 30.00));
         menuOptions.add(new Product(R.drawable.rosecake,R.string.rose_cake, R.string.rose_description, 55.00));
+        menuOptions.add(new Product(R.drawable.candybrownie, R.string.birth_cake, R.string.birth_description , 12.00));
     }
 
     public static ShoppingCartCatalogue getInstance(){
