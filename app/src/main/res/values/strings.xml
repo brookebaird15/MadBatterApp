@@ -21,6 +21,7 @@
     <string name="menu_recipe">Recipe of the Week</string>
     <string name="menu_credits">Credits</string>
     <string name="menu_products">Bakery Menu</string>
+    <string name="menu_contact">Contact</string>
     <string name="menu_aboutus">About Us</string>
     <string name="menu_faq">FAQ</string>
     <string name="menu_cart">My Cart</string>
@@ -57,7 +58,19 @@
     <string name="Remove">Remove from Cart</string>
     <string name="Checkout">Proceed to Checkout</string>
 
-    <!-- CAKE FRAGMENT STRINGS -->
+    <!-- CONTACT US FRAGMENT STRINGS -->
+    <string name="Phone">Phone</string>
+    <string name="Email">Email</string>
+    <string name="viewMap">Open Map</string>
+    <string name="insta">Instagram</string>
+    <string name="ourwebsite">Our Website</string>
+    <string name="questions">Have any questions?</string>
+    <string name="reachout">Contact us via phone or email</string>
+    <string name="location">We\'re located at 220 Ashland Ave. London ON N5W 4E4</string>
+    <string name="followus">Follow us on our Instagram page!</string>
+    <string name="website">Check out our website</string>
+
+    <!-- PRODUCT FRAGMENT STRINGS -->
     <string name="chocolate_mousse">Chocolate Mousse Cake</string>
     <string name="mousse_description">A moist, dark chocolate cake covered in buttercream frosting.</string>
     <string name="caramel_cake">Caramel Cake</string>
