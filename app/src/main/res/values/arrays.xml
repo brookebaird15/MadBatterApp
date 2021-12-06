@@ -1,5 +1,9 @@
 <resources>
     <!-- Animation Preference -->
+    <string-array name="animations_menu">
+        <item>Allow Animations</item>
+        <item>Disable Animations</item>
+    </string-array>
 
     <string-array name="animations_value">
         <item>1</item>

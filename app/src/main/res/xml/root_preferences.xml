@@ -3,10 +3,11 @@
 
     <PreferenceCategory app:title="@string/animations_title">
 
-        <SwitchPreferenceCompat
+        <ListPreference
             app:defaultValue="1"
+            app:entries="@array/animations_menu"
             app:entryValues="@array/animations_value"
-            app:key="animations"
+            app:key="animationsMenu"
             app:summary="@string/animations_summary" />
 
     </PreferenceCategory>
@@ -14,7 +15,7 @@
 <PreferenceCategory app:title="@string/sync_header">
 
 <SwitchPreferenceCompat
-    app:title="Menu Style" />
+    app:title="@string/gridlayout" />
 
 
 

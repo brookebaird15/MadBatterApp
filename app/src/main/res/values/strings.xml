@@ -142,8 +142,11 @@
   </string>
     <!-- Preference Titles -->
     <string name="animations_title">Animations</string>
-    <string name="sync_header">Sync</string>
+    <string name="sync_header">Layout</string>
 
     <!-- Animations preferences -->
     <string name="animations_summary">Toggle animation</string>
+
+    <!-- Menu preferences -->
+    <string name="gridlayout">Toggle grid layout</string>
 </resources>
