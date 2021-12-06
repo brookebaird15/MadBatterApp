@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/creditLayout"
     android:layout_width="match_parent"
@@ -7,13 +7,17 @@
     android:orientation="vertical"
     tools:context=".Fragments.CreditsFragment">
 
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <TextView
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/cookieCredit"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
 
     <TextView
         android:id="@+id/cookieCredit1"
@@ -60,4 +64,128 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/applink9" />
-</LinearLayout>
+    <TextView
+        android:id="@+id/brownieTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/brownieCredit"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/brownieCredit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink10" />
+        <TextView
+            android:id="@+id/brownieCredit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink11" />
+        <TextView
+            android:id="@+id/brownieCredit3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink12" />
+        <TextView
+            android:id="@+id/brownieCredit4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink13" />
+
+        <TextView
+            android:id="@+id/cakeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cakeCredit"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/cakeCredit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink14" />
+        <TextView
+            android:id="@+id/cakeCredit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink15" />
+        <TextView
+            android:id="@+id/cakeCredit3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink16" />
+        <TextView
+            android:id="@+id/cakeCredit4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink17" />
+        <TextView
+            android:id="@+id/cakeCredit5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink18" />
+        <TextView
+            android:id="@+id/cakeCredit6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink19" />
+        <TextView
+            android:id="@+id/cakeCredit7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink20" />
+        <TextView
+        android:id="@+id/cakeCredit8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/applink21" />
+        <TextView
+            android:id="@+id/cakeCredit9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink22" />
+
+        <TextView
+            android:id="@+id/otherTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/otherCredit"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/otherCredit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink23" />
+        <TextView
+            android:id="@+id/otherCredit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink24" />
+        <TextView
+            android:id="@+id/otherCredit3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink25" />
+        <TextView
+            android:id="@+id/otherCredit4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink26" />
+        <TextView
+            android:id="@+id/otherCredit5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink27" />
+        <TextView
+            android:id="@+id/otherCredit6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink28" />
+
+
+
+    </LinearLayout>
+</ScrollView>

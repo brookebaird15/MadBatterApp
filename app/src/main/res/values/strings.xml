@@ -38,7 +38,7 @@
     <string name="brownieCredit">Credits for Brownie images</string>
     <string name="applink10">Photo by <a href="https://unsplash.com/@arantxa_aniorte">Arantxa Aniorte</a> on<a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></string>
     <string name="applink11">Photo by <a href="https://unsplash.com/@kellyvisel">Kelly Visel</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></string>
-    <string name="applink12">Photo by <a href="https://unsplash.com/@pushpak88">Pushpak88</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a> </string>
+    <string name="applink12">Photo by <a href="https://unsplash.com/@pushpak88">Pushpak Dsilva</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a> </string>
     <string name="applink13">Photo by <a href="https://unsplash.com/@tata186">Tatiana Rodriguez</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a> </string>
     <string name="cakeCredit">Credits for Cake images</string>
     <string name="applink14">Photo by <a href="https://unsplash.com/@davidholifield?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Holifield</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
@@ -58,5 +58,15 @@
     <string name="applink21">Photo by <a href="https://unsplash.com/@heatherbarnes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Heather Barnes</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
   </string>
     <string name="applink22">Photo by <a href="https://unsplash.com/@davidholifield?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Holifield</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="otherCredit">Credit for other images</string>
+    <string name="applink23">Photo by <a href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Priscilla Du Preez</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="applink24">Photo by Tim Douglas from Pexels</string>
+    <string name="applink25">Photo by SHVETS production from Pexels</string>
+    <string name="applink26">Photo by Pavel Danilyuk from Pexels</string>
+    <string name="applink27">Photo by <a href="https://unsplash.com/@sserass?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">sera</a> on <a href="https://unsplash.com/@sserass?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="applink28">Photo by <a href="https://unsplash.com/@campbellcreates?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rebecca Campbell</a> on <a href="https://unsplash.com/@campbellcreates?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
   </string>
 </resources>
