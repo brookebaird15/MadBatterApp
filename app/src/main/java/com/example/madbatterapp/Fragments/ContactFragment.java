@@ -110,6 +110,21 @@ public class ContactFragment extends Fragment {
                 }
             }
         });
+        /**
+         * Instagram button to open up instragram page
+         */
+        ImageView instagramButton = view.findViewById(R.id.instagramBtn);
+        instagramButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/lindt/"));
+                    startActivity(intent);
+                } catch(Exception e) {
+                    Snackbar.make(getActivity().findViewById(android.R.id.content), "No application found", Snackbar.LENGTH_SHORT).show();
+                }
+            }
+        });
         return view;
     }
 }
