@@ -57,9 +57,11 @@ public class ContactFragment extends Fragment {
                 } catch (ActivityNotFoundException e){
                     Snackbar.make(getActivity().findViewById(android.R.id.content), "No application found", Snackbar.LENGTH_SHORT).show();
                 }
-
             }
         });
+        /**
+         *
+         */
         return view;
     }
 }
