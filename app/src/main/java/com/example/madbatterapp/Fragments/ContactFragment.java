@@ -39,6 +39,27 @@ public class ContactFragment extends Fragment {
                 }
             }
         });
+        /**
+         * Email button to bring up an email service for user to email business with
+         */
+        Button emailButton = view.findViewById(R.id.emailBtn);
+        emailButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String[] emailAddress = {"madbatterbakery@gmail.com"};
+                Intent i = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"));
+                i.putExtra(Intent.EXTRA_EMAIL, emailAddress);
+                /**TODO
+                 * check if works @ college, laptop can't handle creating an email on emulator 
+                 */
+                try {
+                    startActivity(i);
+                } catch (ActivityNotFoundException e){
+                    Snackbar.make(getActivity().findViewById(android.R.id.content), "No application found", Snackbar.LENGTH_SHORT).show();
+                }
+
+            }
+        });
         return view;
     }
 }
