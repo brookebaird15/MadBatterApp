@@ -15,7 +15,8 @@
 <PreferenceCategory app:title="@string/sync_header">
 
 <SwitchPreferenceCompat
-    app:title="@string/gridlayout" />
+    app:title="@string/gridlayout"
+    android:key="gridLayout"/>
 
 
 
