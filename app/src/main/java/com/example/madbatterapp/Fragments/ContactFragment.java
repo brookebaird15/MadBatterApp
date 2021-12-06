@@ -60,8 +60,21 @@ public class ContactFragment extends Fragment {
             }
         });
         /**
-         *
+         * Map button to open up the location of business
          */
+        Button mapButton = view.findViewById(R.id.mapBtn);
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri location = Uri.parse("geo:0, 0?q=42.99050434825693, -81.20547183308142");
+                Intent i = new Intent(Intent.ACTION_VIEW, location);
+                try {
+                    startActivity(i);
+                }  catch (ActivityNotFoundException e){
+                    Snackbar.make(getActivity().findViewById(android.R.id.content), "No application found", Snackbar.LENGTH_SHORT).show();
+                }
+            }
+        });
         return view;
     }
 }
