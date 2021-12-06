@@ -66,9 +66,11 @@
     <string name="ourwebsite">Our Website</string>
     <string name="questions">Have any questions?</string>
     <string name="reachout">Contact us via phone or email</string>
+    <string name="whereat">Our location</string>
     <string name="location">We\'re located at 220 Ashland Ave. London ON N5W 4E4</string>
+    <string name="socialmedia">Check us out</string>
     <string name="followus">Follow us on our Instagram page!</string>
-    <string name="website">Check out our website</string>
+    <string name="website">Browse our website</string>
 
     <!-- PRODUCT FRAGMENT STRINGS -->
     <string name="chocolate_mousse">Chocolate Mousse Cake</string>

@@ -50,7 +50,7 @@
         tools:layout="@layout/fragment_f_a_q" />
     <fragment
         android:id="@+id/nav_contact"
-        android:name="com.example.madbatterapp.ContactFragment"
+        android:name="com.example.madbatterapp.Fragments.ContactFragment"
         android:label="Contact Us"
         tools:layout="@layout/fragment_contact" />
 </navigation>
