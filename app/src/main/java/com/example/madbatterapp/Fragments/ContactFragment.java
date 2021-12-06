@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.madbatterapp.R;
 import com.google.android.material.snackbar.Snackbar;
@@ -73,6 +74,26 @@ public class ContactFragment extends Fragment {
                 }  catch (ActivityNotFoundException e){
                     Snackbar.make(getActivity().findViewById(android.R.id.content), "No application found", Snackbar.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        /**
+         * Facebook button to open up facebook page
+         */
+        ImageView facebookButton = view.findViewById(R.id.facebookBtn);
+        facebookButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    /**TODO
+                     * Check if this goes to page, laptop too slow to run chrome emulator
+                     */
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/LiLiPastries"));
+                    startActivity(intent);
+                } catch(Exception e) {
+                    Snackbar.make(getActivity().findViewById(android.R.id.content), "No application found", Snackbar.LENGTH_SHORT).show();
+                }
+
             }
         });
         return view;
