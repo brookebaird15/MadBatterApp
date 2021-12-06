@@ -125,6 +125,22 @@ public class ContactFragment extends Fragment {
                 }
             }
         });
+
+        /**
+         * Web intent to lead to the website of the business
+         */
+        ImageView websiteButton = view.findViewById(R.id.websiteBtn);
+        websiteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.skillshare.com/"));
+                    startActivity(intent);
+                } catch(Exception e) {
+                    Snackbar.make(getActivity().findViewById(android.R.id.content), "No application found", Snackbar.LENGTH_SHORT).show();
+                }
+            }
+        });
         return view;
     }
 }
