@@ -1,0 +1,9 @@
+<resources>
+    <!-- Animation Preference -->
+
+    <string-array name="animations_value">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+</resources>

@@ -53,4 +53,8 @@
         android:name="com.example.madbatterapp.Fragments.ContactFragment"
         android:label="Contact Us"
         tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.madbatterapp.SettingsFragment"
+        android:label="SettingsFragment" />
 </navigation>
