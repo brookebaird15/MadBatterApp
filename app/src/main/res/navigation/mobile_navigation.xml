@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_product">
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.madbatterapp.Fragments.HomeFragment"
@@ -12,11 +12,45 @@
     <fragment
         android:id="@+id/nav_recipe"
         android:name="com.example.madbatterapp.Fragments.RecipeFragment"
-        android:label="Recipe"
+        android:label="Recipe of the Week"
         tools:layout="@layout/fragment_recipe" />
     <fragment
         android:id="@+id/nav_credits"
         android:name="com.example.madbatterapp.Fragments.CreditsFragment"
         android:label="Credits"
         tools:layout="@layout/fragment_credits" />
+    <fragment
+        android:id="@+id/nav_product"
+        android:name="com.example.madbatterapp.Fragments.ProductFragment"
+        android:label="Bakery Menu"
+        tools:layout="@layout/fragment_product">
+        <action
+            android:id="@+id/action_nav_cake_to_product_details_fragment"
+            app:destination="@id/nav_product_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.madbatterapp.Fragments.AboutFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.madbatterapp.Fragments.CartFragment"
+        android:label="My Cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/nav_product_details"
+        android:name="com.example.madbatterapp.Fragments.ProductDetailsFragment"
+        android:label="fragment_product_details_fragment"
+        tools:layout="@layout/fragment_product_details" />
+    <fragment
+        android:id="@+id/nav_faq"
+        android:name="com.example.madbatterapp.Fragments.FAQFragment"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_f_a_q" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.madbatterapp.Fragments.ContactFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact" />
 </navigation>

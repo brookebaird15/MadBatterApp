@@ -10,18 +10,89 @@
 
     <!-- CONTENT DESCRIPTIONS FOR IMAGES -->
     <string name="Welcome">Welcome</string>
+    <string name="mousse_cake">Chocolate Mousse Cake</string>
+    <string name="carm_cake">Caramel Cake</string>
+    <string name="sunflower_cake">Sunflower Cake</string>
+    <string name="blackberry_cake">Blackberry Cake</string>
+    <string name="lemonslice_cake">Lemon Cake</string>
 
     <!-- MENU STRINGS-->
     <string name="menu_home">Home</string>
-    <string name="menu_recipe">Recipe</string>
+    <string name="menu_recipe">Recipe of the Week</string>
     <string name="menu_credits">Credits</string>
+    <string name="menu_products">Bakery Menu</string>
+    <string name="menu_contact">Contact</string>
+    <string name="menu_aboutus">About Us</string>
+    <string name="menu_faq">FAQ</string>
+    <string name="menu_cart">My Cart</string>
 
     <!-- HOME FRAGMENT STRINGS -->
     <string name="Categories">Categories</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     
-    <!-- CREDIT FRAGMENT STRINGS -->
+    <!-- ABOUT FRAGMENT STRINGS -->
+    <string name="about">Hi! My name is Allison and you may recognize me if you\'ve been to our store. I\'m the proud owner of
+    the Mad Batter Bakery, which has been open for 5 years! I was 26 when I started this bakery and have always loved baking
+    since I was a child. It\'s been a pleasure to share my passion and excitement with the community. So thank you, for
+    letting me sharing my love with y\'all!</string>
+    <string name="crew">Rest of the Party</string>
+    <string name="member1">Hattie \n Head Baker and Co-owner</string>
+    <string name="member2">Cat \n Pastry Chef</string>
+
+    <!-- FAQ FRAGMENT STRINGS-->
+    <string name="faqtitle">Frequently Asked Questions</string>
+    <string name="aboutus">About Us</string>
+    <string name="orderQuestion">How long will it take for you to complete my order?</string>
+    <string name="orderAnswer">It takes between 24 to 72 hours for an order to be completed. Once completed, you\'ll be notified via email</string>
+    <string name="hoursQuestion">What are your hours?</string>
+    <string name="hoursAnswer">We\'re open Monday-Saturday from 10AM until 5PM</string>
+    <string name="requestQuestion">If I order a cake, can I get writing on it?</string>
+    <string name="requestAnswer">You sure can! Just let me know in the email upon checkout</string>
+    <string name="placeOrderQuestion">Can I place an order over the phone?</string>
+    <string name="placeOrderAnswer"> Due to accountability, we do not take orders over the phone. Please order via the app
+    or our website!</string>
+
+    <!-- CART FRAGMENT STRINGS -->
+    <string name="Cart">Shopping Cart</string>
+    <string name="Remove">Remove from Cart</string>
+    <string name="Checkout">Proceed to Checkout</string>
+
+    <!-- CONTACT US FRAGMENT STRINGS -->
+    <string name="Phone">Phone</string>
+    <string name="Email">Email</string>
+    <string name="viewMap">Open Map</string>
+    <string name="insta">Instagram</string>
+    <string name="ourwebsite">Our Website</string>
+    <string name="questions">Have any questions?</string>
+    <string name="reachout">Contact us via phone or email</string>
+    <string name="whereat">Our location</string>
+    <string name="location">We\'re located at 220 Ashland Ave. London ON N5W 4E4</string>
+    <string name="socialmedia">Check us out</string>
+    <string name="followus">Follow us on our Instagram page!</string>
+    <string name="website">Browse our website</string>
+
+    <!-- PRODUCT FRAGMENT STRINGS -->
+    <string name="chocolate_mousse">Chocolate Mousse Cake</string>
+    <string name="mousse_description">A moist, dark chocolate cake covered in buttercream frosting.</string>
+    <string name="caramel_cake">Caramel Cake</string>
+    <string name="caramel_description">This cake is filled with layers of caramel frosting and drizzled in caramel.</string>
+    <string name="sun_cake">Sunflower Cake</string>
+    <string name="sun_description">A cake is covered in buttercream and decorated with sunflowers.</string>
+    <string name="berry_cake">Blackberry Cake</string>
+    <string name="berry_description">A vanilla-based cake decorated with blackberries and lavender.</string>
+    <string name="lemon_cake">Lemon Cake</string>
+    <string name="lemon_description">This citrus-y cake is filled with vanilla buttercream frosting.</string>
+    <string name="birth_cake">Birthday Cake</string>
+    <string name="birth_description">An all vanilla-based cake decorated with sprinkles and icing.</string>
+    <string name="vanilla_cake">Vanilla Cake</string>
+    <string name="vanilla_description">A vanilla cake drizzled in chocolate and layered with buttercream.</string>
+    <string name="fun_cake">Funfetti Cake</string>
+    <string name="fun_description">A fluffy white cake with sprinkles used inside the cake AND outside!</string>
+    <string name="rose_cake">Rose Cake</string>
+    <string name="rose_description">A colourful vanilla buttercream frosted cake decorated to be look like roses.</string>
+  
+      <!-- CREDIT FRAGMENT STRINGS -->
     <string name="cookieCredit">Credits for Cookie images</string>
     <string name="applink1">Photo by <a href="https://unsplash.com/@ksousaphotography?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Katherine Sousa</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></string>
     <string name="applink2">Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Charles Deluvio</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
