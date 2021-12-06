@@ -1,14 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/creditLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Fragments.CreditsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cookieCredit"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/cookieCredit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/applink1" />
+    <TextView
+        android:id="@+id/cookieCredit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/applink2" />
+    <TextView
+        android:id="@+id/cookieCredit3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/applink3" />
+    <TextView
+        android:id="@+id/cookieCredit4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/applink4" />
+    <TextView
+        android:id="@+id/cookieCredit5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/applink5" />
+    <TextView
+        android:id="@+id/cookieCredit6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/applink6" />
+    <TextView
+        android:id="@+id/cookieCredit7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/applink7" />
+    <TextView
+        android:id="@+id/cookieCredit8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/applink8" />
+    <TextView
+        android:id="@+id/cookieCredit9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/applink9" />
+</LinearLayout>

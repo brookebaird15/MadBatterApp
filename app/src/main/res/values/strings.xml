@@ -20,4 +20,43 @@
     <string name="Categories">Categories</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <!-- CREDIT FRAGMENT STRINGS -->
+    <string name="cookieCredit">Credits for Cookie images</string>
+    <string name="applink1">Photo by <a href="https://unsplash.com/@ksousaphotography?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Katherine Sousa</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></string>
+    <string name="applink2">Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Charles Deluvio</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="applink3">Photo by <a href="https://unsplash.com/@debbiewidjaja?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Debbie Widjaja</a> on <a href="https://unsplash.com/@debbiewidjaja?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="applink4">Photo by Meraki Photos from Pexels</string>
+    <string name="applink5">Photo by Jill Wellington from Pexels</string>
+    <string name="applink6">Photo by M. Catalin Cardei from Pexels</string>
+    <string name="applink7">Photo by Laura James from Pexels</string>
+    <string name="applink8">Photo by <a href="https://unsplash.com/@americanheritagechocolate?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">American Heritage Chocolate</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="applink9">Photo by <a href="https://unsplash.com/@sahandbabali">Sahand Babali</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></string>
+    <string name="brownieCredit">Credits for Brownie images</string>
+    <string name="applink10">Photo by <a href="https://unsplash.com/@arantxa_aniorte">Arantxa Aniorte</a> on<a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></string>
+    <string name="applink11">Photo by <a href="https://unsplash.com/@kellyvisel">Kelly Visel</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></string>
+    <string name="applink12">Photo by <a href="https://unsplash.com/@pushpak88">Pushpak88</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a> </string>
+    <string name="applink13">Photo by <a href="https://unsplash.com/@tata186">Tatiana Rodriguez</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a> </string>
+    <string name="cakeCredit">Credits for Cake images</string>
+    <string name="applink14">Photo by <a href="https://unsplash.com/@davidholifield?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Holifield</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="applink15">Photo by <a href="https://unsplash.com/@davidholifield?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Holifield</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="applink16">Photo by <a href="https://unsplash.com/@heftiba?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Toa Heftiba</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="applink17">Photo by <a href="https://unsplash.com/@americanheritagechocolate?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">American Heritage Chocolate</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="applink18">Photo by <a href="https://unsplash.com/@americanheritagechocolate?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">American Heritage Chocolate</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="applink19">Photo by <a href="https://unsplash.com/@karlygomez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Karly Gomez</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="applink20">Photo by <a href="https://unsplash.com/@biglaughkitchen?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Deva Williamson</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="applink21">Photo by <a href="https://unsplash.com/@heatherbarnes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Heather Barnes</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
+    <string name="applink22">Photo by <a href="https://unsplash.com/@davidholifield?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Holifield</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+  </string>
 </resources>
