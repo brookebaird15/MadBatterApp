@@ -4,12 +4,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.madbatterapp.HomeViewAdapter.POJOS.CategoryItem;
 import com.example.madbatterapp.R;
 
 import java.util.ArrayList;
@@ -29,7 +27,7 @@ public class CustomCategoryViewAdapter extends RecyclerView.Adapter<CustomCatego
     @Override
     public void onBindViewHolder(@NonNull CustomCategoryHolder holder, int position) {
         CategoryItem categoryItem = categoryItems.get(position);
-        holder.image.setImageResource(categoryItem.getImage());
+        holder.image.setImageResource(categoryItems.get(position).getImage());
 
 
     }
