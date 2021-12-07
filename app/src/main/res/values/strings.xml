@@ -19,4 +19,15 @@
     <string name="Categories">Categories</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- RECIPE FRAGMENT STRINGS -->
+    <string name="ingredienttitle">Ingredients</string>
+    <string name="ingredients"><![CDATA[3 cups butter, softened \n 1–&#189; cups cornstarch \n 1–&#189; cups confectioners\' sugar, sifted \n 4–&#189; cups all purpose flour \n halved candied cherries]]></string>
+    <string name="directiontitle">Step One</string>
+    <string name="directiontitle2">Step Two</string>
+    <string name="directiontitle3">Step Three</string>
+    <string name="stepone">In a large bowl, cream butter and confectioners\' sugar until light and fluffy, about 5 minutes. \n Gradually add flour and cornstarch, beating until well blended</string>
+    <string name="steptwo">With hands lightly dusted with additional cornstarch, roll dough into 1 inch balls. \n Place 1 inch apart on ungreased baking sheets. \n Lightly press with floured fork. \n Top with cherry halves. </string>
+    <string name="stepthree">Bake at 300 degrees until bottoms are lightly brownied, 20-22 minutes. \n Cool for 5 minutes before removing from pans to wire racks</string>
+
 </resources>
