@@ -69,9 +69,7 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         ArrayList<CategoryItem> categoryItems = new ArrayList<>();
-        categoryItems.add(new CategoryItem(R.drawable.cakebtnimg));
-        categoryItems.add(new CategoryItem(R.drawable.browniebtnimg));
-        categoryItems.add(new CategoryItem(R.drawable.cookiesbtnimg));
+        categoryItems.add(new CategoryItem(R.drawable.bakerymenu));
         categoryItems.add(new CategoryItem(R.drawable.recipebtnimg));
         categoryItems.add(new CategoryItem(R.drawable.aboutbtnimg));
         categoryItems.add(new CategoryItem(R.drawable.creditsbtnimg));
@@ -80,6 +78,7 @@ public class HomeFragment extends Fragment {
         RecyclerView recyclerView = view.findViewById(R.id.categoriesRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(new CustomCategoryViewAdapter(categoryItems));
+
         return view;
     }
 }
