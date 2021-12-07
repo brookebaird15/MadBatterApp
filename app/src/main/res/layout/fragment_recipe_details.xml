@@ -36,6 +36,7 @@
             android:id="@+id/noteButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:name="com.google.android.gms.actions.CREATE_NOTE"
             android:text="Add to Notes" />
 
         <Button
