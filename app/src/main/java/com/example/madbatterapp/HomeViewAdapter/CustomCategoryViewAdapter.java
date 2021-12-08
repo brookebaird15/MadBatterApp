@@ -7,9 +7,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.madbatterapp.Fragments.ProductFragment;
 import com.example.madbatterapp.Pojo.Product;
 import com.example.madbatterapp.R;
 
