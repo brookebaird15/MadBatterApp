@@ -9,6 +9,17 @@
             app:entryValues="@array/animations_value"
             app:key="animationsMenu"
             app:summary="@string/animations_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/alarm_title">
+        <ListPreference
+            app:defaultValue="0"
+            app:entries="@array/alarm_menu"
+            app:entryValues="@array/alarm_value"
+            app:key="alarmMenu"
+            app:summary="@string/timer_summary" />
+
+
 
     </PreferenceCategory>
 

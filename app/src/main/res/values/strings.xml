@@ -182,10 +182,14 @@
   </string>
     <!-- Preference Titles -->
     <string name="animations_title">Animations</string>
+    <string name="alarm_title">Alarm</string>
     <string name="sync_header">Layout</string>
 
     <!-- Animations preferences -->
-    <string name="animations_summary">Toggle animation</string>
+    <string name="animations_summary">Toggle Animation</string>
+
+    <!-- Conversion preferences -->
+    <string name="timer_summary">Set Timer</string>
 
     <!-- Menu preferences -->
     <string name="gridlayout">Toggle grid layout</string>

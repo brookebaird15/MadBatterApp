@@ -27,7 +27,7 @@ public class AboutFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_about, container, false);
         ImageView profileImg = view.findViewById(R.id.profile_image);
         //Animation for image
-        Animation fadeImg = (Animation) AnimationUtils.loadAnimation(getContext(), R.anim.anime_fade);
+        Animation fadeImg = AnimationUtils.loadAnimation(getContext(), R.anim.anime_fade);
         //Toggle the animation from settings
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         int animationToggle = Integer.parseInt(sharedPreferences.getString("animationsMenu", "1"));

@@ -4,6 +4,16 @@
         <item>Allow Animations</item>
         <item>Disable Animations</item>
     </string-array>
+    
+    <string-array name="alarm_menu">
+        <item>Open Timer in Separate App</item>
+        <item>Open Timer in Background</item>
+    </string-array>
+
+    <string-array name="alarm_value">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
 
     <string-array name="animations_value">
         <item>1</item>

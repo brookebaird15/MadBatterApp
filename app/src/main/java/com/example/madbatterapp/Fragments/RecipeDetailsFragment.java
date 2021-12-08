@@ -7,6 +7,7 @@ import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import android.preference.PreferenceManager;
 import android.provider.AlarmClock;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -100,63 +102,65 @@ public class RecipeDetailsFragment extends Fragment {
             factText.setText(getString(mParam2));
         }
         Button notes = view.findViewById(R.id.noteButton);
-        if (!mParam4){
+        if (!mParam4) {
             notes.setVisibility(view.INVISIBLE);
         }
-            //So this intent doesnt work or it's out of date???
-            notes.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(ContextCompat.checkSelfPermission(getContext(),
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                            != PackageManager.PERMISSION_GRANTED){
+        //So this intent doesnt work or it's out of date???
+        notes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (ContextCompat.checkSelfPermission(getContext(),
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                        != PackageManager.PERMISSION_GRANTED) {
 
-                        //Check to see if asked
-                        if(ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
-                                Manifest.permission.WRITE_EXTERNAL_STORAGE)){
-                            final AlertDialog alertDialog =
-                                    new AlertDialog.Builder(getContext()).create();
-                            alertDialog.setTitle("Create Note Permission");
-                            alertDialog.setMessage("We need access to Notes to add the ingredients");
-                            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    alertDialog.dismiss();
-                                    //request the permission
-                                    ActivityCompat.requestPermissions(getActivity(),
-                                            new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                                            PERMISSION_CREATE_NOTE);
-                                }
-                            });
-                            alertDialog.show();
+                    //Check to see if asked
+                    if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
+                            Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                        final AlertDialog alertDialog =
+                                new AlertDialog.Builder(getContext()).create();
+                        alertDialog.setTitle("Create Note Permission");
+                        alertDialog.setMessage("We need access to Notes to add the ingredients");
+                        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                alertDialog.dismiss();
+                                //request the permission
+                                ActivityCompat.requestPermissions(getActivity(),
+                                        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                                        PERMISSION_CREATE_NOTE);
+                            }
+                        });
+                        alertDialog.show();
 
-                        }else{
-                            //Ask for the permission
-                            ActivityCompat.requestPermissions(getActivity(),
-                                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                                    PERMISSION_CREATE_NOTE);
-                        }
+                    } else {
+                        //Ask for the permission
+                        ActivityCompat.requestPermissions(getActivity(),
+                                new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                                PERMISSION_CREATE_NOTE);
                     }
-                    else {
-                        //We have the permission
-                        Intent intent = new Intent(ACTION_CREATE_NOTE)
-                                .putExtra(EXTRA_NAME, getString(R.string.ingredienttitle))
-                                .putExtra(EXTRA_TEXT, getString(R.string.ingredients));
-                        try{
-                            startActivity(intent);
-                        }catch (ActivityNotFoundException e){
-                            Toast.makeText(getContext(),
-                                    "No software installed", Toast.LENGTH_LONG).show();
-                            Snackbar.make(getActivity().findViewById(android.R.id.content),
-                                    "No software installed", Snackbar.LENGTH_LONG).show();
-                        }
+                } else {
+                    //We have the permission
+                    Intent intent = new Intent(ACTION_CREATE_NOTE)
+                            .putExtra(EXTRA_NAME, getString(R.string.ingredienttitle))
+                            .putExtra(EXTRA_TEXT, getString(R.string.ingredients));
+                    try {
+                        startActivity(intent);
+                    } catch (ActivityNotFoundException e) {
+                        Toast.makeText(getContext(),
+                                "No software installed", Toast.LENGTH_LONG).show();
+                        Snackbar.make(getActivity().findViewById(android.R.id.content),
+                                "No software installed", Snackbar.LENGTH_LONG).show();
                     }
                 }
-            });
+            }
+        });
         Button timer = view.findViewById(R.id.timerButton);
         if (!mParam5) {
             timer.setVisibility(view.INVISIBLE);
         }
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        int alarmToggle = Integer.parseInt(sharedPreferences.getString("alarmMenu", "0"));
+        if (alarmToggle == 1) {
             timer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -164,9 +168,9 @@ public class RecipeDetailsFragment extends Fragment {
                             .putExtra(AlarmClock.EXTRA_MESSAGE, "Set a timer for baking")
                             .putExtra(AlarmClock.EXTRA_LENGTH, 1200)
                             .putExtra(AlarmClock.EXTRA_SKIP_UI, false);
-                    try{
+                    try {
                         startActivity(intent);
-                    }catch (ActivityNotFoundException e){
+                    } catch (ActivityNotFoundException e) {
                         Toast.makeText(getContext(),
                                 "No software installed", Toast.LENGTH_LONG).show();
                         Snackbar.make(getActivity().findViewById(android.R.id.content),
@@ -174,6 +178,7 @@ public class RecipeDetailsFragment extends Fragment {
                     }
                 }
             });
-        return view;
-    }
+        }
+            return view;
+        }
 }
