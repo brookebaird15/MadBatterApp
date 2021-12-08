@@ -10,14 +10,13 @@
 
     <ImageView
         android:id="@+id/ImageViewProduct"
-        android:layout_width="958dp"
-        android:layout_height="670dp"
-        android:layout_margin="5dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="801dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/placeholder"
         android:scaleType="fitXY"
         android:src="@drawable/placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,14 +25,15 @@
 
     <TextView
         android:id="@+id/TextViewProductTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="578dp"
+        android:layout_height="79dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:fontFamily="@font/abril_fatface"
         android:text="@string/placeholder"
+        android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="34dp" />
+        android:textSize="48sp" />
 
     <TextView
         android:id="@+id/TextViewProductDetails"

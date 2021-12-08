@@ -79,7 +79,7 @@ public class ProductDetailsFragment extends Fragment {
         //ADD THIS TO YOUR ACTUAL ITEM FRAGMENT
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         MainActivity.fab.show();
-        MainActivity.fab.setImageResource(R.drawable.ic_baseline_add_24);
+        MainActivity.fab.setImageResource(R.drawable.ic_baseline_add_shopping_cart_24);
         MainActivity.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

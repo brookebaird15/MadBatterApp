@@ -184,6 +184,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/applink28" />
+        <TextView
+            android:id="@+id/otherCredit7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink29" />
 
 
 
