@@ -40,7 +40,7 @@
     <string name="directiontitle3">Step Three</string>
     <string name="stepone">In a large bowl, cream butter and confectioners\' sugar until light and fluffy, about 5 minutes. \n Gradually add flour and cornstarch, beating until well blended</string>
     <string name="steptwo">With hands lightly dusted with additional cornstarch, roll dough into 1 inch balls. \n Place 1 inch apart on ungreased baking sheets. \n Lightly press with floured fork. \n Top with cherry halves. </string>
-    <string name="stepthree">Bake at 300 degrees until bottoms are lightly brownied, 20-22 minutes. \n Cool for 5 minutes before removing from pans to wire racks</string>
+    <string name="stepthree">Bake at 300 degrees until bottoms are lightly browned, 20-22 minutes. \n Cool for 5 minutes before removing from pans to wire racks</string>
 
 
     <!-- ABOUT FRAGMENT STRINGS -->
@@ -108,7 +108,7 @@
     <string name="candy_brownie">Candy Cane Brownie</string>
     <string name="candy_description">A chocolate brownie decorated with candy cane chunks on top </string>
     <string name="choco_brownie">Chocolate Brownie</string>
-    <string name="choco_description">A fudgey, chocolate brownie</string>
+    <string name="choco_description">A super fudgey chocolate brownie. </string>
     <string name="almond_brownie">Almond Brownie</string>
     <string name="almond_description">A coffee-chocolate brownie topped with sliced, toasted almonds</string>
     <string name="double_chocolate">Double Chocolate Brownie</string>

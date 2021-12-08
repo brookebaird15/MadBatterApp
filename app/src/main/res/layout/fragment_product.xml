@@ -7,8 +7,10 @@
     tools:context=".Fragments.ProductFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/productRecyclerView"/>
+        android:id="@+id/productRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
