@@ -103,7 +103,34 @@
     <string name="fun_description">A fluffy white cake with sprinkles used inside the cake AND outside!</string>
     <string name="rose_cake">Rose Cake</string>
     <string name="rose_description">A colourful vanilla buttercream frosted cake decorated to be look like roses.</string>
-
+    <string name="caramel_brownie">Caramel Brownie</string>
+    <string name="caramelbrownie_description">"A chocolate brownie covered in a caramel sauce</string>
+    <string name="candy_brownie">Candy Cane Brownie</string>
+    <string name="candy_description">A chocolate brownie decorated with candy cane chunks on top </string>
+    <string name="choco_brownie">Chocolate Brownie</string>
+    <string name="choco_description">A fudgey, chocolate brownie</string>
+    <string name="almond_brownie">Almond Brownie</string>
+    <string name="almond_description">A coffee-chocolate brownie topped with sliced, toasted almonds</string>
+    <string name="double_chocolate">Double Chocolate Brownie</string>
+    <string name="doublechocolate_description">A fudge chocolate brownie drizzled in chocolate</string>
+    <string name="strawberry_brownie">Strawberry Brownie</string>
+    <string name="strawberry_description">A chocolate brownie topped with dried strawberries</string>
+    <string name="walnut_brownie">Walnut Brownie</string>
+    <string name="walnut_description">A chocolate brownie topped with chopped walnuts and confectioners sugar</string>
+    <string name="xmas_cookie">Christmas Cookies</string>
+    <string name="xmas_description">An assortment of sugar cookies decorated for Christmas</string>
+    <string name="pistachio_cookie">Pistachio Cookie</string>
+    <string name="pistachio_description">A butter cookie with pistachios</string>
+    <string name="pecan_cookie">Pecan Cookie</string>
+    <string name="pecan_description">A chocolate chip cookie with pecans mixed in</string>
+    <string name="mm_cookie">M&amp;M Cookie</string>
+    <string name="mm_description">A chocolate cookie topped with mini M&amp;M\'s</string>
+    <string name="macaroon_cookie">Macaroon</string>
+    <string name="macaroon_description">A flaky vanilla cookie with a vanilla icing inside</string>
+    <string name="chocooat_cookie">Chocolate Oatmeal Cookie</string>
+    <string name="chocooat_description">A chocolate chip cookie mixed in with rolled oats</string>
+    <string name="chocolate_chip">Chocolate Chip Cookie</string>
+    <string name="chocolate_description">A chocolate chip cookie</string>
 
     <!-- CREDIT FRAGMENT STRINGS -->
     <string name="cookieCredit">Credits for Cookie images</string>
