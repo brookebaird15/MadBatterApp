@@ -64,5 +64,5 @@ This is to contact the business with any inquiries about orders, purchases, gene
 
 | Author Information |
 |---------------------|
-| Brooke Baird [Links](w0766373@myscc.ca) OR [Links](brookebee413@gmail.com) |
+| Brooke Baird  |
 
