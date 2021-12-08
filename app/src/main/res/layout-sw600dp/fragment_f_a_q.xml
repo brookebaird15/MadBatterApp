@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.FAQFragment">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_weight="1"
+        android:background="@color/grey"
+        android:fontFamily="@font/abril_fatface"
+        android:padding="10dp"
+        android:text="@string/faqtitle"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/faqList"/>
+
+</LinearLayout>
