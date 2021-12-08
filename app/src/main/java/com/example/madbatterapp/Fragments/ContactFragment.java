@@ -95,21 +95,7 @@ public class ContactFragment extends Fragment {
                 }
             }
         });
-        /**
-         * Twitter button to open up to twitter page
-         */
-        ImageView twitterButton = view.findViewById(R.id.twitterBtn);
-        twitterButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/Twitter"));
-                    startActivity(intent);
-                } catch(Exception e) {
-                    Snackbar.make(getActivity().findViewById(android.R.id.content), "No application found", Snackbar.LENGTH_SHORT).show();
-                }
-            }
-        });
+
         /**
          * Instagram button to open up instragram page
          */
