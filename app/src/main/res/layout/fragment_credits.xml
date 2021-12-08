@@ -204,7 +204,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/applink32" />
-
+        <TextView
+            android:id="@+id/otherCredit11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applink33" />
 
 
     </LinearLayout>
