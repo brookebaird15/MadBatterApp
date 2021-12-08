@@ -2,13 +2,13 @@
 This application was created for the purpose in mind of a bakery using 
 it for ecommerce. The purpose of the app is for users to be able to view 
 inventory of the bakery and either make a purchase, follow along with a recipe or contact the business.
-
-***
-
 When the user first opens the application, they first view the home 
 screen. From there, they can touch the hamburger menu in the top-right 
 of the screen, accessing the many more screens available to them to 
 explore.\
+
+***
+
 #### The Bakery Menu
 In this following screen, the user is able to view the products 
 available from the bakery. They are able to scroll and view. If an item 
