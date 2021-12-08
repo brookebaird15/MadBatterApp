@@ -62,7 +62,7 @@ This is to contact the business with any inquiries about orders, purchases, gene
 
 ***
 
-| Author Information |
-|---------------------|
-| Brooke Baird  |
+|Author information| |
+|-------|--|
+| Brooke Baird      |  w0766373@myscc.ca| 
 
