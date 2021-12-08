@@ -35,21 +35,23 @@
                 android:id="@+id/phoneBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_baseline_phone_24"
                 android:layout_margin="15dp"
                 android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_baseline_phone_24"
                 android:padding="10dp"
-                android:text="@string/Phone" />
+                android:text="@string/Phone"
+                android:textColor="@color/cream" />
 
             <Button
                 android:id="@+id/emailBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_baseline_email_24"
                 android:layout_margin="15dp"
                 android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
                 android:padding="10dp"
-                android:text="@string/Email" />
+                android:text="@string/Email"
+                android:textColor="@color/cream" />
 
         </LinearLayout>
 
@@ -74,7 +76,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:text="@string/viewMap" />
+            android:text="@string/viewMap"
+            android:textColor="@color/cream" />
 
         <TextView
             android:id="@+id/textView8"

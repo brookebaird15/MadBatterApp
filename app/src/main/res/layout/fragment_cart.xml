@@ -37,8 +37,10 @@
             android:id="@+id/checkoutBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow"
             android:fontFamily="@font/asap"
-            android:text="@string/Checkout"/>
+            android:text="@string/Checkout"
+            android:textColor="@color/white" />
     </LinearLayout>
 
 </LinearLayout>

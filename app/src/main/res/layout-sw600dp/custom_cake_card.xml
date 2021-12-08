@@ -8,7 +8,7 @@
     android:layout_margin="10dp"
     android:clickable="true"
     android:foreground="?android:attr/selectableItemBackground"
-    app:cardBackgroundColor="@color/forestgreen"
+    app:cardBackgroundColor="@color/brown_light"
     app:cardCornerRadius="10dp"
     app:cardPreventCornerOverlap="false"
     app:cardUseCompatPadding="true">

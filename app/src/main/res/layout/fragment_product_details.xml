@@ -28,6 +28,7 @@
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:text="@string/placeholder"
+        android:fontFamily="@font/abril_fatface"
         android:textColor="#000000"
         android:textSize="24dp" />
 
@@ -36,6 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
+        android:fontFamily="@font/asap"
         android:text="@string/placeholder"
+        android:textAlignment="center"
         android:textColor="#000000" />
 </LinearLayout>

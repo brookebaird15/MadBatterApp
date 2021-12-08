@@ -8,7 +8,7 @@
     android:layout_margin="25dp"
     android:clickable="true"
     android:foreground="?android:attr/selectableItemBackground"
-    app:cardBackgroundColor="@color/forestgreen"
+    app:cardBackgroundColor="@color/brown_light"
     app:cardCornerRadius="10dp"
     app:cardPreventCornerOverlap="false"
     app:cardUseCompatPadding="true">
@@ -55,7 +55,7 @@
                     android:fontFamily="@font/abril_fatface"
                     android:text="name"
                     android:textAlignment="center"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/cream"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

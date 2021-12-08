@@ -48,8 +48,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
+                android:backgroundTint="@color/darkcream"
                 android:fontFamily="@font/abril_fatface"
-                android:text="Add to Notes" />
+                android:text="Add to Notes"
+                android:textColor="@color/cream" />
         </LinearLayout>
 
         <Button
@@ -57,6 +59,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
-            android:text="timer" />
+            android:backgroundTint="@color/darkcream"
+            android:text="timer"
+            android:textColor="@color/cream" />
     </LinearLayout>
 </ScrollView>

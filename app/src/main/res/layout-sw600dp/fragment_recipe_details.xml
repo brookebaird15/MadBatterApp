@@ -48,8 +48,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
+                android:backgroundTint="@color/darkcream"
                 android:padding="10dp"
                 android:text="Add to Notes"
+                android:textColor="@color/cream"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -58,8 +60,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
+            android:backgroundTint="@color/darkcream"
             android:padding="10dp"
             android:text="timer"
+            android:textColor="@color/cream"
             android:textSize="20sp" />
     </LinearLayout>
 </ScrollView>
