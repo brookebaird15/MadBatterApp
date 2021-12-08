@@ -71,6 +71,14 @@ public class CreditsFragment extends Fragment {
         getapp.setMovementMethod(LinkMovementMethod.getInstance());
         getapp = view.findViewById(R.id.otherCredit6);
         getapp.setMovementMethod(LinkMovementMethod.getInstance());
+        getapp = view.findViewById(R.id.otherCredit7);
+        getapp.setMovementMethod(LinkMovementMethod.getInstance());
+        getapp = view.findViewById(R.id.otherCredit8);
+        getapp.setMovementMethod(LinkMovementMethod.getInstance());
+        getapp = view.findViewById(R.id.otherCredit9);
+        getapp.setMovementMethod(LinkMovementMethod.getInstance());
+        getapp = view.findViewById(R.id.otherCredit10);
+        getapp.setMovementMethod(LinkMovementMethod.getInstance());
 
         return view;
     }
