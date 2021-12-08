@@ -47,11 +47,10 @@
                 android:text="@string/Categories"
                 android:textAlignment="center"
                 android:textSize="34sp"
+                android:fontFamily="@font/abril_fatface"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
-                <!-- TODO
-                ADD CUSTOM FONTS FOR TEXTS -->
 
             <androidx.core.widget.NestedScrollView
                 android:layout_width="wrap_content"

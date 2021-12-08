@@ -13,6 +13,7 @@
         android:layout_weight="1"
         android:background="@color/forestgreen"
         android:padding="10dp"
+        android:fontFamily="@font/abril_fatface"
         android:text="@string/faqtitle"
         android:textAlignment="center"
         android:textColor="#FFFFFF"

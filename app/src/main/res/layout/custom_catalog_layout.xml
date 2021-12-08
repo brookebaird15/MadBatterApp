@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:orientation="vertical">
+    android:background="@color/purple_700"
+    android:orientation="vertical"
+    app:layout_marginBaseline="5dp">
 
     <TextView
         android:id="@+id/productPrice"
@@ -13,6 +15,7 @@
         android:layout_height="35dp"
         android:layout_marginTop="40dp"
         android:layout_weight="1"
+        android:fontFamily="@font/asap"
         android:text="TextView"
         android:textAlignment="center"
         android:textSize="14sp"
@@ -39,6 +42,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="40dp"
         android:layout_weight="1"
+        android:fontFamily="@font/abril_fatface"
         android:text="TextView"
         android:textAlignment="center"
         android:textSize="14sp"
